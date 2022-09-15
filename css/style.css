@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+body {
+    background-color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url("/assets/images/fondoPablo.jpg");
+    background-size: cover;
+    background-position-y: 100em;
+}
+
+#bodyFaq{
+   background-position-y: -10em;
+    
+}
+
+/*Menu navegable superior*/
+header {
+    z-index: 10;
+    margin-bottom: 1em;
+    background-color: #cccccc;
+    position: sticky;
+    top: 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: black;
+    border-style: solid;
+}
+
+header nav {
+    display: flex;
+    font-family: 'Permanent Marker';
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    word-spacing: 15px;
+    padding-bottom: 1.5em;
+    margin-top: 0em;
+
+}
+header nav ul{
+    display: flex;
+    align-content: space-between;
+    list-style: none;
+}
+
+header nav ul li{
+    transform: scale(1);
+    transition: 1s;
+    
+}
+header nav ul li:hover{
+    transform: scale(1.5);
+    transition: 1.5s;
+    
+}
+header nav a {
+    box-sizing: content-box;
+    width: max-content;
+    position: sticky;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(9, 85, 9);
+
+    transition: 0.5s;
+
+}
+
+header nav a:hover {
+    color: #61CE70;
+    transition: 0.5s;
+    
+
+}
+
+header img {
+    margin-left: 35em;
+    width: 10em;
+    height: 5em;
+    transform: scale(1);
+    transition: 2s;
+
+}
+
+header img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+    
+    
+}
+/*Menu navegable superior*/
+
+/*Texto*/
+.subTitulo {
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    border-style: solid;
+    border-color: #04861e;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+    border-width: 10px;
+    text-align: center;
+
+}
+
+.parrafo {
+    font-size: 20px;
+    color: white;
+    font-weight: 1000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#parrafoInicio {
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+#motto {
+    text-align: center;
+    font-family: 'Permanent Marker';
+    font-size: 50px;
+    font-style: italic;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h2 {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#contactoH2 {
+    font-family: 'Acme', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+main div p {
+    padding-left: 2em;
+}
+
+#preguntasFrecuentes{
+    word-spacing: 3px;
+}
+
+#lArtDu {
+    word-spacing: 2px;
+    font-family: 'Permanent Marker';
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(9, 85, 9);
+
+}
+#lArtDu:hover {
+    color: #61CE70;
+
+}
+#inscribirseTexto {
+    word-spacing: 2px;
+    font-family: 'Permanent Marker';
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(9, 85, 9);
+
+}
+#inscribirseTexto:hover {
+    color: #61CE70;
+
+}
+
+#contactoTexto {
+    word-spacing: 2px;
+    font-size: 50px;
+    font-family: 'Permanent Marker';
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(9, 85, 9);
+
+}
+#contactoTexto:hover {
+    color: #61CE70;
+
+}
+
+/*Texto*/
+
+
+#videoIntroductorio {
+    width: 70em;
+    height: 30em;
+
+}
+
+/*Nosotros  Multimedia*/
+main div img {
+    width: 15em;
+    height: 10em;
+}
+
+/*Nosotros  Multimedia*/
+
+.ubicacionGoogleMapa {
+    width: 15em;
+    height: 10em;
+}
+
+/*MultiMedia*/
+
+/*Contacto*/
+.logoFlexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.redSocialLogo {
+    padding: 6em;
+    margin-left: 30px;
+    padding-bottom: 1em;
+    width: 20em;
+    height: 15em;
+}
+
+.redSocialNameContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+h1{
+    text-align: center;
+}
+
+h1 img{
+    width: 1024px;
+    height: 511px;
+    
+}
+
+/*Contacto*/
+
+/*Containers*/
+.nosotrosFlexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLogoFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.videoIntroductorioFlexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacionesTextoFlexContainer {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.ubicacionesTextoFlexContainer span {
+    text-decoration: underline;
+}
+
+.direccionTextoFlexContainer span {
+    text-decoration: underline;
+}
+
+.direccionTextoFlexContainer {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ubicacionesMapsFlexContainer {
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/*Containers*/
+
+/*Lista tipo indice*/
+.indiceLartDuDeplacement {
+    position: sticky;
+    top: 9.5em;
+    border-left: 10px;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-style: solid;
+    list-style-type: none;
+    justify-self: end;
+    width: 10em;
+    text-align: right;
+}
+
+.indiceLartDuDeplacement a {
+    font-family: 'Permanent Marker';
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.indiceLartDuDeplacement li {
+    line-height: 2em;
+}
+
+.asideGrid {
+    display: grid;
+    grid-template-rows: 15em;
+    grid-area: "aside";
+    justify-self: stretch;
+}
+
+.divGrid {
+    grid-area: "div";
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 2fr 15em;
+    grid-template-rows: 1fr;
+    grid-template-areas: "div""indice";
+}
+
+
+/*Lista tipo indice*/
+
+footer {
+    background-color: black;
+    margin-top: 20em;
+
+}
+
+footer p {
+    color: white;
+    padding-top: 10em;
+}
+
+footer img {
+    padding: 3em;
+    width: 15em;
+    height: 10em;
+}
+
+footer div img {
+    width: 2em;
+    height: 2em;
+}
+
+@media  (min-device-width: 200px) and (max-device-width: 1024px) {
+    
+}
