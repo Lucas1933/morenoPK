@@ -7,59 +7,96 @@
     <meta name="viewport" content="width=1000">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/posibleLogo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lato&family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="./js/script.js"></script>
     <title>Moreno PK | Inicio</title>
 </head>
-<body> 
+
+<body id="inicioBody">
     <!--barra navegable-->
-        <header>
-            <div id="logoBeFlexing">
-                <img src="../assets/images/posibleLogo.png"  alt="">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a id="lArtDu" href="./pages/LartDuDeplacement.html">L'art du deplacement</a></li>
-                    <li><a href="./pages/inscribirse.html">Inscribirse</a></li>
-                    <li><a id="preguntasFrecuentes"href="./pages/faq.html">Preguntas Frecuentes</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li> 
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <div id="logoBeFlexing">
+            <img src="../assets/images/posibleLogo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a id="lArtDu" href="./pages/LartDuDeplacement.html">L'art du deplacement</a></li>
+                <li><a href="./pages/inscribirse.html">Inscribirse</a></li>
+                <li><a id="preguntasFrecuentes" href="./pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a id="contacto" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <!--barra navegable-->
         
-            <h2 id="motto">"Etre et durer, etre fort pour etre utile"</h2>
-            <main>
-                <p class="parrafo" id="parrafoInicio"> 
-                    Bienvenido! somos Moreno PK un taller sin fines
-                    de lucro con el proposito de transmitir este disciplina y su filosofia a cualquiera que este dispuesto a venir a nuestros talleres.
-                    En nuestra pagina vas a poder encontrar informacion sobre el parkour, su historia y filosofia "Ser y durar" (Être et durer)
-                    "Ser fuerte para ser util" (être fort pour être utile), los ejercicios y movimientos que se practican, informacion sobre nuestros entrenadores
-                    y vas a poder inscribirte a los talleres. 
-                    Aca te dejamos un video introductorio para ir aclarando tus dudas, espero nos conozcamos pronto!
-                    <p>AÑADI OTRO PARRRAFO PARA PROBAR EL COMMIT</p>
-                </p>
-            </main>
-         
-    
-    
-    
-    <footer>
-        <p>Todos los derechos e izquierdos bien puestos®</p>
-
-        <img  src="../assets/images/posibleLogoBlanco.png" alt="">
-
-        <div class="footerLogoFlexContainer">
-            <img src="../assets/images/instagramLogoWhite.svg" alt="">
-            <img src="../assets/images/facebookLogoWhite.svg" alt="">
-            <img src="../assets/images/wspWhiteLogo.svg" alt="">
-            <img src="../assets/images/youtubeWhiteLogo.svg" alt="">
+        <div id="mottoContainer">
+            <p id="motto">Etre et durer </p>
+            <div>
+                <img src="./assets/images/jumping.png" alt="">
+            </div>
+            <p id="motto">Etre fort pour etre utile</p>
         </div>
         
+        <main>
+            <p class="parrafo" id="parrafoInicio">
+                Bienvenido!  <br> somos Moreno PK un taller sin fines
+                de lucro con el proposito de transmitir este disciplina y su filosofia a cualquiera que este dispuesto a
+                venir a nuestros talleres. <br>
+                En nuestra pagina vas a poder encontrar informacion sobre el parkour, su historia y filosofia <br> "Ser y durar"
+                (Être et durer)
+                "Ser fuerte para ser util" (être fort pour être utile)
+                <br> y vas a poder inscribirte a los talleres. <br>
+                Aca te dejamos un video introductorio para ir aclarando tus dudas, espero nos conozcamos pronto!
+            </p>
+            <div id="videoIntroductorio">
+                <iframe src="https://www.youtube.com/embed/KaRUhsXA_HA"
+                    title="Parkour, l'art de se déplacer (Subtitulado español)" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </main>
+    
+
+
+
+
+    <footer>
+        <div class="seguinosContainer">
+            <p>SEGUINOS</p>
+            <div class="footerLogoContainer">
+                <img src="../assets/images/instagramLogoWhite.svg" alt="">
+                <img src="../assets/images/facebookLogoWhite.svg" alt="">
+                <img src="../assets/images/wspWhiteLogo.svg" alt="">
+                <img src="../assets/images/youtubeWhiteLogo.svg" alt="">
+            </div>
+        </div>
+        
+        
+        <div class="listaContainer">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a id="lArtDu" href="./pages/LartDuDeplacement.html">L'art du deplacement</a></li>
+                <li><a href="./pages/inscribirse.html">Inscribirse</a></li>
+                <li><a id="preguntasFrecuentes" href="./pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>    
+        </div>
+        
+        <div class="renunciaContainer">
+            <div class="logoFooterContainer">
+                <img src="../assets/images/posibleLogoBlanco.png" alt="">
+            </div>
+            <p>
+                Moreno PK es un sitio independiente, no nos hacemos responsables por cualquier prejuicio causado fuera
+                de nuestros taller al practicar sin nuestra supervicion, todo lo enseñado y dicho durante los talleres
+                esta sujeto a la discrecion de cada practicante.
+            </p>
+        </div>
     </footer>
 </body>
+
 </html>

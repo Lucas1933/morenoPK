@@ -4,381 +4,197 @@
     width: 100%;
 }
 
+@keyframes animacionLogoHeader{
+    0%{
+        transform: translateX(50em);
+    }
+   
+}
+@keyframes animacionLogoFondo{
+    0%{
+        transform: translateX(-50em);
+    }
+   
+}
 
 body {
     background-color: white;
-    font-family: 'Merriweather Sans', sans-serif;
-    background-image: url("/assets/images/fondoPablo.jpg");
-    background-size: cover;
-    background-position-y: 100em;
+    font-family: 'Lato', sans-serif;
 }
 
-#bodyFaq{
-   background-position-y: -10em;
-    
-}
 
-/*Menu navegable superior*/
-header {
-    z-index: 10;
-    margin-bottom: 1em;
-    background-color: #cccccc;
-    position: sticky;
-    top: 0px;
+/* Menu superior */
+header{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: black;
+    border-bottom: 0.2em;
     border-style: solid;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    
+}
+#logoBeFlexing{
+   display: flex;
+   justify-content: center;
 }
 
-header nav {
-    display: flex;
-    font-family: 'Permanent Marker';
-    font-size: 20px;
-    font-weight: 900;
-    text-align: center;
-    word-spacing: 15px;
-    padding-bottom: 1.5em;
-    margin-top: 0em;
-
+#logoBeFlexing img{
+    width: 10em;
+    height: 5em;
+    animation-name: animacionLogoHeader;
+    animation-duration: 2s;
 }
+
 header nav ul{
     display: flex;
-    align-content: space-between;
     list-style: none;
 }
 
-header nav ul li{
-    transform: scale(1);
-    transition: 1s;
-    
-}
-header nav ul li:hover{
-    transform: scale(1.5);
-    transition: 1.5s;
-    
-}
-header nav a {
-    box-sizing: content-box;
-    width: max-content;
-    position: sticky;
-    font-weight: 600;
+header nav ul li a{
+    display: flex;     /* pendiente de ser necesario reducir el area clickeable */
+    justify-content: center;
     text-decoration: none;
-    color: rgb(9, 85, 9);
-
-    transition: 0.5s;
-
-}
-
-header nav a:hover {
-    color: #61CE70;
-    transition: 0.5s;
-    
-
-}
-
-header img {
-    margin-left: 35em;
-    width: 10em;
-    height: 5em;
-    transform: scale(1);
-    transition: 2s;
-
-}
-
-header img:hover{
-    transform: scale(1.1);
-    transition: 2s;
-    
-    
-}
-/*Menu navegable superior*/
-
-/*Texto*/
-.subTitulo {
-    font-family: 'Acme', sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    color: azure;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    
-    border-style: solid;
-    border-color: #04861e;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-
-    border-width: 10px;
-    text-align: center;
-
-}
-
-.parrafo {
-    font-size: 20px;
-    color: white;
-    font-weight: 1000;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#parrafoInicio {
-    padding-bottom: 3em;
-    text-align: center;
-}
-
-#motto {
-    text-align: center;
     font-family: 'Permanent Marker';
-    font-size: 50px;
-    font-style: italic;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-h2 {
-    font-family: 'Acme', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 35px;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-#contactoH2 {
-    font-family: 'Acme', sans-serif;
-    color: white;
-    font-size: 30px;
-}
-
-main div p {
-    padding-left: 2em;
+    font-size: 20px;
+    color: rgb(7, 158, 52);
+    font-weight: 1000;
+    letter-spacing: 1px;
 }
 
 #preguntasFrecuentes{
-    word-spacing: 3px;
+    width: max-content;
+}
+#lArtDu{
+    width: max-content;
 }
 
-#lArtDu {
-    word-spacing: 2px;
-    font-family: 'Permanent Marker';
-    font-weight: 600;
-    text-decoration: none;
-    color: rgb(9, 85, 9);
-
-}
-#lArtDu:hover {
-    color: #61CE70;
-
-}
-#inscribirseTexto {
-    word-spacing: 2px;
-    font-family: 'Permanent Marker';
-    font-weight: 600;
-    text-decoration: none;
-    color: rgb(9, 85, 9);
-
-}
-#inscribirseTexto:hover {
-    color: #61CE70;
-
+header nav ul li a:hover{
+    transform: scale(1.5);
+    color: rgb(0, 255, 76);
 }
 
-#contactoTexto {
-    word-spacing: 2px;
-    font-size: 50px;
-    font-family: 'Permanent Marker';
-    font-weight: 600;
-    text-decoration: none;
-    color: rgb(9, 85, 9);
-
-}
-#contactoTexto:hover {
-    color: #61CE70;
-
-}
-
-/*Texto*/
+/* Menu superior */
 
 
-#videoIntroductorio {
-    width: 70em;
-    height: 30em;
 
-}
-
-/*Nosotros  Multimedia*/
-main div img {
-    width: 15em;
-    height: 10em;
-}
-
-/*Nosotros  Multimedia*/
-
-.ubicacionGoogleMapa {
-    width: 15em;
-    height: 10em;
-}
-
-/*MultiMedia*/
-
-/*Contacto*/
-.logoFlexContainer {
-    display: flex;
-    flex-direction: row;
-}
-
-.redSocialLogo {
-    padding: 6em;
-    margin-left: 30px;
-    padding-bottom: 1em;
-    width: 20em;
-    height: 15em;
-}
-
-.redSocialNameContainer {
-    display: flex;
-    flex-direction: row;
+/* inicio */
+#parrafoInicio{
+    margin-top: 10em;
+    line-height: 36px;
     text-align: center;
+    background-color: white;
+}
+main p{
+    display: flex;
+    flex-direction: column;
     font-size: 30px;
-    font-weight: 900;
-
 }
-
-h1{
-    text-align: center;
-}
-
-h1 img{
-    width: 1024px;
-    height: 511px;
-    
-}
-
-/*Contacto*/
-
-/*Containers*/
-.nosotrosFlexContainer {
-    display: flex;
-    flex-direction: row;
-}
-
-.footerLogoFlexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.videoIntroductorioFlexContainer {
+main div{
     display: flex;
     justify-content: center;
 }
-
-.ubicacionesTextoFlexContainer {
+main div iframe{
+    margin-top: 8em;
+    width: 60em;
+    height: 33em;
+}
+#inicioBody{
+    background-image: url("../assets/images/parkour-building-brown-concrete-wallpaper.jpg");
+    background-size: 107em 49em ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 6em;
+}
+#motto{
     display: flex;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+#mottoContainer{
+    display: flex;
+    margin-top: 3em;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end;
 
 }
+#mottoContainer img{
+width: 15em;
+height: 10em;
+animation-name: animacionLogoFondo;
+animation-duration: 2s;
+}
+#mottoContainer div{
+    display: flex;
+    justify-content: center;
+}
+/* inicio */
 
-.ubicacionesTextoFlexContainer span {
+
+/* Foooter */
+footer{
+    height: 20em;
+    margin-top: 20em;
+    display: flex;
+    background-color: black;
+}
+.seguinosContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.seguinosContainer p{
+    font-size: 30px;
     text-decoration: underline;
-}
-
-.direccionTextoFlexContainer span {
-    text-decoration: underline;
-}
-
-.direccionTextoFlexContainer {
-    display: flex;
-    font-size: 20px;
-    font-weight: 600;
     text-align: center;
 }
-
-.ubicacionesMapsFlexContainer {
+.footerLogoContainer{
     display: flex;
-    padding-left: 20px;
     justify-content: center;
     justify-content: space-around;
 }
 
-/*Containers*/
-
-/*Lista tipo indice*/
-.indiceLartDuDeplacement {
-    position: sticky;
-    top: 9.5em;
-    border-left: 10px;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    border-style: solid;
-    list-style-type: none;
-    justify-self: end;
-    width: 10em;
-    text-align: right;
+.listaContainer{
+    display: flex;
+    margin-left: 4em;
 }
-
-.indiceLartDuDeplacement a {
-    font-family: 'Permanent Marker';
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-}
-
-.indiceLartDuDeplacement li {
-    line-height: 2em;
-}
-
-.asideGrid {
-    display: grid;
-    grid-template-rows: 15em;
-    grid-area: "aside";
-    justify-self: stretch;
-}
-
-.divGrid {
-    grid-area: "div";
-}
-
-.mainGrid {
-    display: grid;
-    grid-template-columns: 2fr 15em;
-    grid-template-rows: 1fr;
-    grid-template-areas: "div""indice";
-}
-
-
-/*Lista tipo indice*/
-
-footer {
-    background-color: black;
-    margin-top: 20em;
-
-}
-
-footer p {
-    color: white;
-    padding-top: 10em;
-}
-
-footer img {
-    padding: 3em;
-    width: 15em;
-    height: 10em;
-}
-
-footer div img {
-    width: 2em;
-    height: 2em;
-}
-
-@media  (min-device-width: 200px) and (max-device-width: 1024px) {
+.listaContainer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
 }
+.listaContainer ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.renunciaContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logoFooterContainer{
+   display: flex;
+   justify-content: center;
+
+}
+
+.logoFooterContainer img{
+    width: 12em;
+    height: 7em;
+}
+.footerLogoContainer img{
+    width: 3em;
+    height: 3em;
+}
+footer p{
+    color: white;
+}
+
+
+/* Foooter */
