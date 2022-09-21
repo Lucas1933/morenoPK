@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,21 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/posibleLogo.png">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <script src="./js/script.js"></script>
     <title>Moreno PK | Inscribirse</title>
 </head>
+
 <body>
     <!--barra navegable-->
     <header>
         <div id="logoBeFlexing">
-            <img src="../assets/images/posibleLogo.png"  alt="">
+            <img src="../assets/images/posibleLogo.png" alt="">
         </div>
         <nav>
             <ul>
@@ -25,71 +31,84 @@
                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
                 <li><a id="lArtDu" href="../pages/LartDuDeplacement.html">L'art du deplacement</a></li>
                 <li><a href="../pages/inscribirse.html">Inscribirse</a></li>
-                <li><a id="preguntasFrecuentes"href="../pages/faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li> 
+                <li><a id="preguntasFrecuentes" href="../pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-<!--barra navegable-->
-        <h1><img src="../assets/images/grupo.jpg" alt=""></h1>
-        <h2 id="subTitulo">Aca vas a poder ver la ubicacion de nuestros talleres e inscribirte a cualquiera de ellos, si tenes alguna duda hace click aca <a id="contactoTexto"href="../pages/contacto.html">Contactanos</a></h2>
-        <main>
-            <div class="ubicacionesTextoFlexContainer">
-                <p><span>Taller:</span> "Hospital Viejo"</p>
-                <p><span>Taller:</span> "Plaza Bujan"</p>
-                <p><span>Taller:</span> "Plaza San Martin"</p>
-            </div>
-            <div class="direccionTextoFlexContainer">
-                <p><span>Direccion:</span> Av.Libertador 4569</p>
-                <p><span>Direccion:</span> Bartolome Mitre 5162</p>
-                <p><span>Direccion:</span> Bartolome Mitre 3050</p>
-            </div>
-            <div class="ubicacionesMapsFlexContainer"> 
-                
-                <iframe class="ubicacionGoogleMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.973935922397!2d-58.79247407704282!3d-34.64855336760105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1662479154283!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe class="ubicacionGoogleMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.216152155672!2d-58.7717747!3d-34.6533382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb57d7ed6436bb3!2sPlaza%20Bujan!5e0!3m2!1ses!2sar!4v1662478965914!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe class="ubicacionGoogleMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.2257749300707!2d-58.790748484221396!3d-34.64900066923659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9551e8ccb33d%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1662479269582!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          
-            
-            <div>
-                <p>FORMULARIO</p>
-            </div>
-        </main>
+    <!--barra navegable-->
+    <h1><img src="../assets/images/grupo.jpg" alt=""></h1>
+    <h2 class="subTituloInscribirse">Aca vas a poder ver la ubicacion de nuestros talleres e inscribirte a cualquiera de
+        ellos <br> si tenes alguna duda hace click aca <br><div><a id="contactoTexto" href="../pages/contacto.html">Contactanos</a></div></h2>
+   
+    <main>
+    <div class="encuadre">
+        <div class="ubicacionesTexto">
+            <p>Taller: "Hospital Viejo"</p>
+            <p>Taller: "Plaza Bujan"</p>
+            <p>Taller: "Plaza San Martin"</p>
+        </div>
+        <div class="direccionTexto">
+            <p>Direccion: Av.Libertador 4569</p>
+            <p>Direccion: Bartolome Mitre 5162</p>
+            <p>Direccion: Bartolome Mitre 3050</p>
+        </div>
 
-        <footer>
-            <div class="seguinosContainer">
-                <p>SEGUINOS</p>
-                <div class="footerLogoContainer">
-                    <img src="../assets/images/instagramLogoWhite.svg" alt="">
-                    <img src="../assets/images/facebookLogoWhite.svg" alt="">
-                    <img src="../assets/images/wspWhiteLogo.svg" alt="">
-                    <img src="../assets/images/youtubeWhiteLogo.svg" alt="">
-                </div>
+        <div class="ubicacionesMaps">
+            <iframe class="ubicacionGoogleMapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.973935922397!2d-58.79247407704282!3d-34.64855336760105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1662479154283!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="ubicacionGoogleMapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.216152155672!2d-58.7717747!3d-34.6533382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb57d7ed6436bb3!2sPlaza%20Bujan!5e0!3m2!1ses!2sar!4v1662478965914!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="ubicacionGoogleMapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.2257749300707!2d-58.790748484221396!3d-34.64900066923659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9551e8ccb33d%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1662479269582!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+        <div>
+            <p>FORMULARIO</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="seguinosContainer">
+            <p>SEGUINOS</p>
+            <div class="footerLogoContainer">
+                <img src="../assets/images/instagramLogoWhite.svg" alt="">
+                <img src="../assets/images/facebookLogoWhite.svg" alt="">
+                <img src="../assets/images/wspWhiteLogo.svg" alt="">
+                <img src="../assets/images/youtubeWhiteLogo.svg" alt="">
             </div>
-            
-            
-            <div class="listaContainer">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a id="lArtDu" href="./pages/LartDuDeplacement.html">L'art du deplacement</a></li>
-                    <li><a href="./pages/inscribirse.html">Inscribirse</a></li>
-                    <li><a id="preguntasFrecuentes" href="./pages/faq.html">Preguntas Frecuentes</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>    
+        </div>
+
+
+        <div class="listaContainer">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a id="lArtDu" href="./pages/LartDuDeplacement.html">L'art du deplacement</a></li>
+                <li><a href="./pages/inscribirse.html">Inscribirse</a></li>
+                <li><a id="preguntasFrecuentes" href="./pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="renunciaContainer">
+            <div class="logoFooterContainer">
+                <img src="../assets/images/posibleLogoBlanco.png" alt="">
             </div>
-            
-            <div class="renunciaContainer">
-                <div class="logoFooterContainer">
-                    <img src="../assets/images/posibleLogoBlanco.png" alt="">
-                </div>
-                <p>
-                    Moreno PK es un sitio independiente, no nos hacemos responsables por cualquier prejuicio causado fuera
-                    de nuestros taller al practicar sin nuestra supervicion, todo lo enseñado y dicho durante los talleres
-                    esta sujeto a la discrecion de cada practicante.
-                </p>
-            </div>
-        </footer>
+            <p>
+                Moreno PK es un sitio independiente, no nos hacemos responsables por cualquier prejuicio causado fuera
+                de nuestros taller al practicar sin nuestra supervicion, todo lo enseñado y dicho durante los talleres
+                esta sujeto a la discrecion de cada practicante.
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
