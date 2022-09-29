@@ -4,39 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1000">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/posibleLogo.png">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merriweather+Sans:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Moreno PK | L art du deplacement</title>
 </head>
 
 <body>
-     <!--barra navegable-->
-     <header>
-        <div id="logoBeFlexing">
-            <img src="../assets/images/posibleLogo.png"  alt="">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a id="lArtDu" href="../pages/LartDuDeplacement.html">L'art du deplacement</a></li>
-                <li><a href="../pages/inscribirse.html">Inscribirse</a></li>
-                <li><a id="preguntasFrecuentes"href="../pages/faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li> 
-            </ul>
+      <!--barra navegable-->
+    <header>
+        <!-- boton desplegable -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logoMenuContainer">
+                <a class="navbar-brand" href="#"><img src="../assets/images/posibleLogo.png" alt=""></a>
+                <div class="morenopk">
+                    <img src="../assets/images/morenopk-removebg-preview.png" alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- boton desplegable -->
+            <!-- menu desplegado -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./LartDuDeplacement.html">L'art de se déplacer <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./faq.html">Preguntas frecuentes <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./inscribirse.html">Inscribirse <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./nosotros.html">Nosotros <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contacto.html">Contacto<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./galeria.html">Galeria<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu desplegado -->
         </nav>
     </header>
-<!--barra navegable-->
+    <!--barra navegable-->
 
-    <h1><img src="../assets/images/yamakasi.jpg" alt="banner"></h1>
-    <main class="mainGrid">
-        <div class="divGrid">
+    <h1><img class="banner" src="../assets/images/bannerPlaceHolder.png" alt="banner"></h1>
+    
+    <main>
+        <div>
         <p class="subTitulo"id="introduccion">Introduccion</p>
+        <iframe id="videoIntroductorio" src="https://www.youtube.com/embed/KaRUhsXA_HA" title="Parkour, l'art de se déplacer (Subtitulado español)" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="parrafo">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe cumque voluptatem? Necessitatibus, ipsam
             minus laborum quod, veniam ducimus deleniti incidunt voluptas laudantium molestias at sunt nam praesentium
@@ -105,7 +140,7 @@
     </div>
 
         <!--Indice a la derecha -->
-        <aside class="asideGrid">
+        <!-- <aside class="asideGrid">
             <ul class="indiceLartDuDeplacement">
                 <li> <a href="#introduccion">Introduccion</a> </li>
                 <li> <a href="#lamethodenaturelle">Lá Methode Naturelle</a></li>
@@ -114,7 +149,7 @@
                 <li> <a href="#yamakasi">Los Yamakasi</a> </li>
                 <li> <a href="#pkOfr">¿Parkour o FreeRunning?</a> </li>
             </ul>
-        </aside>
+        </aside> -->
         <!--Indice a la derecha -->
     </main>
 
@@ -122,36 +157,46 @@
         <div class="seguinosContainer">
             <p>SEGUINOS</p>
             <div class="footerLogoContainer">
-                <img src="../assets/images/instagramLogoWhite.svg" alt="">
-                <img src="../assets/images/facebookLogoWhite.svg" alt="">
-                <img src="../assets/images/wspWhiteLogo.svg" alt="">
-                <img src="../assets/images/youtubeWhiteLogo.svg" alt="">
+                <a href="https://www.instagram.com/"><img src="../assets/images/instagramLogoWhite.svg" alt=""></a>
+                <a href="https://www.facebook.com/"> <img src="../assets/images/facebookLogoWhite.svg" alt=""></a>
+                <a href="https://web.whatsapp.com/"><img src="../assets/images/wspWhiteLogo.svg" alt="">     </a>
+                <a href="https://www.youtube.com/"><img src="../assets/images/youtubeWhiteLogo.svg" alt=""></a>
             </div>
         </div>
-        
-        
+
+
         <div class="listaContainer">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a id="lArtDu" href="./pages/LartDuDeplacement.html">L'art du deplacement</a></li>
-                <li><a href="./pages/inscribirse.html">Inscribirse</a></li>
-                <li><a id="preguntasFrecuentes" href="./pages/faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>    
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a  href="./LartDuDeplacement.html">L'art de se déplacer</a></li>
+                <li><a  href="./faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./inscribirse.html">Inscribirse</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+            </ul>
         </div>
-        
+
         <div class="renunciaContainer">
             <div class="logoFooterContainer">
                 <img src="../assets/images/posibleLogoBlanco.png" alt="">
             </div>
             <p>
-                Moreno PK es un sitio independiente, no nos hacemos responsables por cualquier prejuicio causado fuera
+                ©Moreno PK es un sitio independiente, no nos hacemos responsables por cualquier prejuicio causado fuera
                 de nuestros taller al practicar sin nuestra supervicion, todo lo enseñado y dicho durante los talleres
-                esta sujeto a la discrecion de cada practicante.
+                esta sujeto a la discrecion de cada practicante. <br> ©MorenoPk <br> Todos los derechos e izquierdos bien puestos 
             </p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

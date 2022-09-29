@@ -4,272 +4,413 @@
     width: 100%;
 }
 
-@keyframes animacionLogoHeader{
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes animacionLogoHeaderDesktop{
     0%{
         transform: translateX(50em);
     }
    
 }
-@keyframes animacionLogoFondo{
+
+@keyframes animacionLogoHeaderMobile{
     0%{
-        transform: translateX(-50em);
+        transform: translateX(15em);
     }
    
 }
-
-body {
-    background-color: white;
-    font-family: 'Lato', sans-serif;
-}
-
-h1 img{
-    width: 41.95em;
-    height: 20em;
-}
-
-/* Menu superior */
+/* navBar */
 header{
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0.2em;
-    border-style: solid;
-    top: 0;
     position: sticky;
-    background-color: white;
-    
-}
-#logoBeFlexing{
-   display: flex;
-   justify-content: center;
-}
-
-#logoBeFlexing img{
-    width: 10em;
-    height: 5em;
-    animation-name: animacionLogoHeader;
-    animation-duration: 2s;
-}
-
-header nav ul{
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li a{
-    display: flex;     /* pendiente de ser necesario reducir el area clickeable */
-    justify-content: center;
-    text-decoration: none;
-    font-family: 'Permanent Marker';
-    font-size: 19px;
-    color: rgb(7, 158, 52);
-    font-weight: 1000;
-    letter-spacing: 1px;
-}
-
-
-header nav ul li a:hover{
-    transform: scale(1.5);
-    color: rgb(0, 255, 76);
-}
-
-/* Menu superior */
-
-
-
-/* inicio */
-#parrafoInicio{
-    margin-top: 10em;
-    line-height: 36px;
-    text-align: center;
-    background-color: white;
-}
-main p{
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-}
-main div{
-    display: flex;
-    justify-content: center;
-}
-main div iframe{
-    margin-top: 8em;
-    width: 60em;
-    height: 33em;
-}
-#inicioBody{
-    background-image: url("../assets/images/parkour-building-brown-concrete-wallpaper.jpg");
-    background-size: 107em 49em ;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 6em;
-}
-#motto{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+    top: 0;
     font-family: 'Permanent Marker', cursive;
 }
-#mottoContainer{
+.navbar-toggler{
     display: flex;
-    margin-top: 3em;
+    padding-right: 0.2em;
     flex-direction: column;
-    justify-content: center;
-    justify-content: flex-end;
+    justify-content: end;
+    border: none;
 
 }
-#mottoContainer img{
-width: 15em;
-height: 10em;
-animation-name: animacionLogoFondo;
-animation-duration: 2s;
+.nav-link{
+    line-height: 2.5em;
+    font-size: 20px;
 }
-#mottoContainer div{
+
+.navbar-toggler[type=button] {
+  outline: none;
+  width: 15em;
+
+  }
+
+
+.logoMenuContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+
 }
+
+.logoMenuContainer a{
+    margin: 0;
+}
+.logoMenuContainer a img{
+    animation-name: animacionLogoHeaderMobile;
+    animation-duration: 1.5s;
+}
+.morenopk{
+    display: flex;
+    padding-right: 1em;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.morenopk img{
+   width: 10em;
+   animation-name: animacionLogoHeaderMobile;
+   animation-duration: 1.5s;
+}
+/* navBar */
+
 /* inicio */
 
 
-/* Nosotros */
-.nosotrosH2{
-    line-height: 36px;
-    text-align: center;
-    background-color: white;
+
+/* inicio */
+/* contacto */
+.logoFlexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logoFlexContainer a{
+    display: flex;
+    justify-content: center;
+}
+.logoFlexContainer img{
+    width: 5em;
     
 }
-.nosotrosMainContainer{
+.logoFlexContainer p{
+    text-align: center;
+    font-weight: 1000;
+    
+}
+/* contacto */
+/*preguntas frecuentes*/
+    .subTitulo{
+        text-align: center;
+        font-family: 'Permanent Marker';
+        font-size: 20px;
+    }
+
+    #lArtDu{
+        font-family: 'Permanent Marker', cursive;
+        color: black;
+    }
+
+    #duda{
+        text-align: center;
+    }
+
+/*preguntas frecuentes*/
+
+/* inscribirse */
+
+.subtituloInscribirse{
+    text-align: center;
+    line-height: 1.5em;;
+}
+#contactoTexto{
+    text-align: center;
+    font-family: 'Permanent Marker',cursive;
+    color: black;
+}
+#contactoTexto:active{
+    color: rgb(6, 136, 45);
+}
+.contactoContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacionesContainer{
+    height: 20em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-.nosotrosFlexContainer{
-    display: flex;
-    margin-top: 3em;
 
 }
-.nosotrosFlexContainer img{
-    width: 20em;
-    height: 15em;
-}
-.nosotrosFlexContainer video{
-    width: 20em;
-    height: 10em;
-    border-style: solid;
-}
 
-.parrafoNosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 20px;
-    text-align: center;
-}
-/* Nosotros */
-
-/* Inscribirse */
-.subTituloInscribirse{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-#contactoTexto{
-    width: min-content;
+.talleresNombres{
     font-family: 'Permanent Marker';
-    text-decoration: none;
-    color: rgb(7, 158, 52);
+    color: white;
+    font-size: 20px;
 }
-
-#contactoTexto:hover{
-    color: rgb(0, 255, 76);
+.dropdown-menu p{
+    text-align: center;
+    font-weight: 1000;
 }
-
-.encuadre{
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-
-}
-.ubicacionesTexto{
-   grid-area: "ubtexto";
-}
-
-.direccionTexto{
-    grid-area: "ditexto";
-}
-
-.ubicacionesMaps{
-   grid-area: "map";
-}
-
-.ubicacionesMaps iframe{
-    height: 20em;
-}
-
-
-
-/* Inscribirse */
-/* Foooter */
-footer{
-    height: 20em;
-    margin-top: 20em;
+.labelContainer{
     display: flex;
-    background-color: black;
 }
-.seguinosContainer{
+.labelContainer label{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    height: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+}
+
+.inputContainer{
+    display: flex;
+}
+/* inscribirse */
+
+/* lart du */
+#videoIntroductorio{
+    height: 25em;
+}
+/* lart du */
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
 .seguinosContainer p{
-    font-size: 30px;
-    text-decoration: underline;
     text-align: center;
+    color: white;
+    font-size: 30px;
+
 }
 .footerLogoContainer{
     display: flex;
-    justify-content: center;
     justify-content: space-around;
 }
 
-.listaContainer{
+.footerLogoContainer a{
     display: flex;
-    margin-left: 4em;
+    justify-content: center;
 }
+.footerLogoContainer img{
+    width: 2em;
+    height: 2em;
+}
+
 .listaContainer ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
+    line-height: 5em;;
 }
+
 .listaContainer ul li a{
-    display: flex;
     text-decoration: none;
     color: white;
 }
 
-.renunciaContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.logoFooterContainer{
-   display: flex;
-   justify-content: center;
-
-}
-
-.logoFooterContainer img{
-    width: 12em;
-    height: 7em;
-}
-.footerLogoContainer img{
-    width: 3em;
-    height: 3em;
-}
-footer p{
+.renunciaContainer p{
     color: white;
 }
-/* Foooter */
+/* footer */
+/* medias querys */
+@media  (min-width: 768px) {
+    /* header navbar */
+    .morenopk img{
+        width: 20em;
+    }
+
+     .navbar-toggler-icon{
+     padding: 1.5em;
+    }
+
+    .nav-link{
+        font-size: 30px;
+    }
+    /* header navbar */
+    /* inicio */
+    #parrafoInicio{
+        font-size: 30px;
+    }
+    /* inicio */
+
+
+    /* la art du */
+    .subTitulo{
+        font-size: 35px;
+    }
+
+    .parrafo{
+        font-size: 25px;
+    }
+    /* la art du */
+
+    /* inscribirse */
+    .talleresNombres{
+        font-size: 30px;
+    }
+    /* inscribirse */
+
+
+
+    /* footer */
+    .footerLogoContainer img{
+        width: 4em;
+        height: 4em;
+    }
+    
+    .listaContainer ul li a{
+        font-size: 22px;
+    }
+
+    .logoFooterContainer img{
+        width: 45em;
+    }
+    /* footer */
+
+    /* contacto */
+    .logoFlexContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .logoFlexContainer img{
+        width: 10em;
+    }
+    /* contacto */
+
+}
+
+@media  (min-width: 992px){
+    /* inicio */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: 8em;
+    }
+    .logoMenuContainer a img{
+        width: 5em;
+        animation-name: animacionLogoHeaderDesktop;
+        animation-duration: 2s;
+
+    }
+    .morenopk img{
+        width: 10em;
+        animation-name: animacionLogoHeaderDesktop;
+        animation-duration: 2s;
+
+    }
+    .morenopk{
+        display: flex;
+        align-items: end;
+    }
+
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        font-weight: 1000;
+        font-size: 15px;
+    }
+
+    .nav-link:hover{
+        font-size: 16px;
+        color: rgb(6, 136, 45) !important;
+    }
+    .motto{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5em;
+    }
+    .motto img{
+        width: 60em;
+    }
+
+    .imagenes img{
+        width: 20em;
+    }
+    /* inicio */
+
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .seguinosContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listaContainer ul li a{
+       display: flex;
+       justify-content: center;
+    }
+    .listaContainer ul{
+        list-style: none;
+    }
+    .listaContainer ul li a {
+        font-size: 20px;
+    }
+    .renunciaContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .logoFooterContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoFooterContainer img{
+        width: 10em;
+    }
+    
+    /* footer */
+
+    h1{
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .banner{
+       
+        width: 24em;
+    }
+
+    /* inscribirse */
+    .dropdown-menu {
+        width: 30em;
+    }
+    .ubicacionesContainer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn {
+        height: 20em;
+    }
+    /* inscribirse */
+
+    /* nosotros */
+    .nosotrosFlexContainer video{
+        width: 30em;
+    }
+    .nosotrosFlexContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* nosotros */
+
+    /* galeria */
+    .galeriaContainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* galeria */
+}
+/* medias querys */
