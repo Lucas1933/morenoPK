@@ -198,11 +198,11 @@ footer{
     border-color: black;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
 }
 .seguinosContainer p{
     text-align: center;
-    color: black;
+    color: white;
     font-size: 30px;
 
 }
@@ -226,11 +226,11 @@ footer{
 
 .listaContainer ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .renunciaContainer p{
-    color: black;
+    color: white;
 }
 /* footer */
 /* medias querys */
@@ -382,7 +382,7 @@ footer{
         width: 10em;
     }
     .footerLogoContainer img{
-        width: 2.5em;
+        width: 4em;
     }
     
     /* footer */
