@@ -189,6 +189,13 @@ form{
 /* lart du */
 /* footer */
 footer{
+    margin-top: 10em;
+    border-style: solid;
+    border-top: 3;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: black;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -374,6 +381,9 @@ footer{
     .logoFooterContainer img{
         width: 10em;
     }
+    .footerLogoContainer img{
+        width: 4em;
+    }
     
     /* footer */
 
@@ -383,10 +393,9 @@ footer{
         justify-content: center;
     }
     .banner{
-       
         width: 24em;
     }
-
+    
     /* inscribirse */
     .dropdown-menu {
         width: 30em;
