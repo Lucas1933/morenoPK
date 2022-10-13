@@ -3,41 +3,6 @@
   padding: 0;
   width: 100%; }
 
-main .lartContenido .subTitulo {
-  font-size: 28px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 100;
-  text-align: center; }
-
-main .lartContenido .parrafo {
-  text-align: center;
-  font-size: 20px; }
-
-main .faqContenido .subTitulo {
-  font-size: 28px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 100;
-  text-align: center; }
-
-main .faqContenido .parrafo {
-  text-align: center;
-  font-size: 20px; }
-  main .faqContenido .parrafo a {
-    font-family: "Permanent Marker";
-    color: black; }
-
-main .faqContenido :last-child {
-  text-align: center; }
-
-.encabezado {
-  font-size: 30px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 500;
-  text-align: center; }
-
 @keyframes animacionLogoHeaderDesktop {
   0% {
     transform: translateX(50em); } }
@@ -138,9 +103,52 @@ footer {
   footer .renunciaContainer p {
     font-size: 20px;
     font-family: default;
-    color: white;
-    font-weight: 100;
+    color: #a2a2a2;
+    font-weight: 0;
     text-align: center; }
+
+.encabezado {
+  font-size: 30px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 500;
+  text-align: center; }
+
+main .lartContenido .subTitulo {
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 100;
+  text-align: center; }
+
+main .lartContenido .parrafo {
+  text-align: center;
+  font-size: 20px; }
+
+main .faqContenido .subTitulo {
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 100;
+  text-align: center; }
+
+main .faqContenido .parrafo {
+  text-align: center;
+  font-size: 20px; }
+  main .faqContenido .parrafo a {
+    font-family: "Permanent Marker";
+    color: black; }
+
+main .faqContenido :nth-child(11) {
+  display: block;
+  text-align: center; }
+
+main .faqContenido :nth-child(13) {
+  display: block;
+  text-align: center; }
+
+main .faqContenido :last-child {
+  text-align: center; }
 
 @media (min-width: 992px) {
   header .navbar {

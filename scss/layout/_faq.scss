@@ -13,6 +13,14 @@ main{
                 color: black;
             }
         }
+        :nth-child(11){
+            display: block;
+            text-align: center;
+        }
+        :nth-child(13){
+            display: block;
+            text-align: center;
+        }
         :last-child{
                 text-align: center;
         }
