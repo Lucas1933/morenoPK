@@ -1,431 +1,262 @@
 * {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+  margin: 0;
+  padding: 0;
+  width: 100%; }
 
-body{
+main .lartContenido .subTitulo {
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 100;
+  text-align: center; }
+
+main .lartContenido .parrafo {
+  text-align: center;
+  font-size: 20px; }
+
+main .faqContenido .subTitulo {
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 100;
+  text-align: center; }
+
+main .faqContenido .parrafo {
+  text-align: center;
+  font-size: 20px; }
+  main .faqContenido .parrafo a {
+    font-family: "Permanent Marker";
+    color: black; }
+
+main .faqContenido :last-child {
+  text-align: center; }
+
+.encabezado {
+  font-size: 30px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 500;
+  text-align: center; }
+
+@keyframes animacionLogoHeaderDesktop {
+  0% {
+    transform: translateX(50em); } }
+
+@keyframes animacionLogoHeaderMobile {
+  0% {
+    transform: translateX(15em); } }
+
+header {
+  position: sticky;
+  top: 0;
+  font-family: 'Permanent Marker', cursive; }
+  header .navbar {
+    background-color: black !important; }
+    header .navbar .logoMenuContainer {
+      display: flex;
+      flex-direction: row-reverse; }
+      header .navbar .logoMenuContainer .morenopk {
+        display: flex;
+        padding-right: 1em;
+        flex-direction: column;
+        justify-content: end; }
+        header .navbar .logoMenuContainer .morenopk img {
+          width: 10em;
+          animation-name: animacionLogoHeaderMobile;
+          animation-duration: 1.5s; }
+      header .navbar .logoMenuContainer a {
+        margin: 0; }
+        header .navbar .logoMenuContainer a img {
+          animation-name: animacionLogoHeaderMobile;
+          animation-duration: 1.5s; }
+    header .navbar .collapse .navbar-nav .nav-item .nav-link {
+      line-height: 2.5em;
+      font-size: 20px;
+      color: white !important; }
+    header .navbar .navbar-toggler {
+      display: flex;
+      padding-right: 0.2em;
+      flex-direction: column;
+      justify-content: end;
+      border: none; }
+    header .navbar .navbar-toggler[type=button] {
+      outline: none;
+      width: 15em; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif; }
+
+footer {
+  margin-top: 10em;
+  border-style: solid;
+  border-top: 3;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: black; }
+  footer .seguinosContainer p {
+    font-size: 28px;
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    font-weight: 100;
+    text-align: center; }
+  footer .seguinosContainer .footerLogoContainer {
+    padding-top: 3em;
     display: flex;
-    flex-direction: column;
-}
-
-@keyframes animacionLogoHeaderDesktop{
-    0%{
-        transform: translateX(50em);
-    }
-   
-}
-
-@keyframes animacionLogoHeaderMobile{
-    0%{
-        transform: translateX(15em);
-    }
-   
-}
-/* navBar */
-header{
-    position: sticky;
-    top: 0;
-    font-family: 'Permanent Marker', cursive;
- 
-
-}
-.navbar-toggler{
-    display: flex;
-    padding-right: 0.2em;
-    flex-direction: column;
-    justify-content: end;
-    border: none;
-
-}
-.nav-link{
-    line-height: 2.5em;
-    font-size: 20px;
-    color: white !important;
-}
-
-.navbar-toggler[type=button] {
-  outline: none;
-  width: 15em;
-
-  }
-.navbar{
-    background-color: black !important;
-}
-
-
-.logoMenuContainer{
-    display: flex;
-    flex-direction: row-reverse;
-
-}
-
-.logoMenuContainer a{
-    margin: 0;
-}
-.logoMenuContainer a img{
-    animation-name: animacionLogoHeaderMobile;
-    animation-duration: 1.5s;
-}
-.morenopk{
-    display: flex;
-    padding-right: 1em;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.morenopk img{
-   width: 10em;
-   animation-name: animacionLogoHeaderMobile;
-   animation-duration: 1.5s;
-}
-/* navBar */
-
-/* inicio */
-
-
-
-/* inicio */
-/* contacto */
-.logoFlexContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.logoFlexContainer a{
-    display: flex;
-    justify-content: center;
-}
-.logoFlexContainer img{
-    width: 5em;
-    
-}
-.logoFlexContainer p{
-    text-align: center;
-    font-weight: 1000;
-    
-}
-/* contacto */
-/*preguntas frecuentes*/
-    .subTitulo{
-        text-align: center;
-        font-family: 'Permanent Marker';
+    justify-content: space-around; }
+    footer .seguinosContainer .footerLogoContainer a {
+      display: flex;
+      justify-content: center; }
+    footer .seguinosContainer .footerLogoContainer img {
+      width: 2.5em;
+      height: 2.5em; }
+  footer .listaContainer {
+    padding-top: 5em; }
+    footer .listaContainer ul {
+      line-height: 5em;
+      text-align: center; }
+      footer .listaContainer ul li a {
+        text-decoration: none;
         font-size: 20px;
-    }
-
-    #lArtDu{
-        font-family: 'Permanent Marker', cursive;
-        color: black;
-    }
-
-    #duda{
-        text-align: center;
-    }
-
-/*preguntas frecuentes*/
-
-/* inscribirse */
-
-.subtituloInscribirse{
-    text-align: center;
-    line-height: 1.5em;;
-}
-#contactoTexto{
-    text-align: center;
-    font-family: 'Permanent Marker',cursive;
-    color: black;
-}
-#contactoTexto:active{
-    color: rgb(6, 136, 45);
-}
-.contactoContainer{
+        font-family: "Permanent Marker", cursive;
+        color: white;
+        font-weight: 100;
+        text-align: center; }
+  footer .renunciaContainer .logoFooterContainer {
     display: flex;
-    justify-content: center;
-}
-
-.ubicacionesContainer{
-    height: 20em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.talleresNombres{
-    font-family: 'Permanent Marker';
-    color: white;
+    justify-content: space-between; }
+    footer .renunciaContainer .logoFooterContainer :first-child {
+      width: 12em;
+      height: 5em; }
+    footer .renunciaContainer .logoFooterContainer :last-child {
+      width: 10em; }
+  footer .renunciaContainer p {
     font-size: 20px;
-}
-.dropdown-menu p{
-    text-align: center;
-    font-weight: 1000;
-}
-.labelContainer{
-    display: flex;
-}
-.labelContainer label{
-    display: flex;
-    justify-content: center;
-}
+    font-family: default;
+    color: white;
+    font-weight: 100;
+    text-align: center; }
 
-form{
-    height: 30em;
+@media (min-width: 992px) {
+  header .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-.inputContainer{
-    display: flex;
-}
-/* inscribirse */
-
-/* lart du */
-#videoIntroductorio{
-    height: 25em;
-}
-/* lart du */
-/* footer */
-footer{
-    margin-top: 10em;
-    border-style: solid;
-    border-top: 3;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    border-color: black;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-}
-.seguinosContainer p{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-
-}
-.footerLogoContainer{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footerLogoContainer a{
+    height: 8em; }
+    header .navbar .logoMenuContainer a img {
+      width: 5em;
+      animation-name: animacionLogoHeaderDesktop;
+      animation-duration: 2s; }
+    header .navbar .logoMenuContainer .morenopk {
+      display: flex;
+      align-items: end; }
+      header .navbar .logoMenuContainer .morenopk img {
+        width: 10em !important;
+        animation-name: animacionLogoHeaderDesktop;
+        animation-duration: 2s; }
+    header .navbar .collapse .navbar-nav .nav-item .nav-link {
+      display: flex;
+      justify-content: center;
+      font-weight: 1000 !important;
+      font-size: 15px !important; }
+    header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+      font-size: 16px !important;
+      color: #06882d !important; }
+  .motto {
     display: flex;
     justify-content: center;
-}
-.footerLogoContainer img{
-    width: 2em;
-    height: 2em;
-}
-
-.listaContainer ul{
-    line-height: 5em;;
-}
-
-.listaContainer ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.renunciaContainer p{
-    color: white;
-}
-/* footer */
-/* medias querys */
-@media  (min-width: 768px) {
-    /* header navbar */
-    .morenopk img{
-        width: 20em;
-    }
-
-     .navbar-toggler-icon{
-     padding: 1.5em;
-    }
-
-    .nav-link{
-        font-size: 30px;
-    }
-    /* header navbar */
-    /* inicio */
-    #parrafoInicio{
-        font-size: 30px;
-    }
-    /* inicio */
-
-
-    /* la art du */
-    .subTitulo{
-        font-size: 35px;
-    }
-
-    .parrafo{
-        font-size: 25px;
-    }
-    /* la art du */
-
-    /* inscribirse */
-    .talleresNombres{
-        font-size: 30px;
-    }
-    /* inscribirse */
-
-
-
-    /* footer */
-    .footerLogoContainer img{
-        width: 4em;
-        height: 4em;
-    }
-    
-    .listaContainer ul li a{
-        font-size: 22px;
-    }
-
-    .logoFooterContainer img{
-        width: 45em;
-    }
-    /* footer */
-
-    /* contacto */
-    .logoFlexContainer{
-        display: flex;
-        flex-direction: row;
-    }
-    .logoFlexContainer img{
-        width: 10em;
-    }
-    /* contacto */
-
-}
-
-@media  (min-width: 992px){
-    /* inicio */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        height: 8em;
-    }
-    .logoMenuContainer a img{
-        width: 5em;
-        animation-name: animacionLogoHeaderDesktop;
-        animation-duration: 2s;
-
-    }
-    .morenopk img{
-        width: 10em;
-        animation-name: animacionLogoHeaderDesktop;
-        animation-duration: 2s;
-
-    }
-    .morenopk{
-        display: flex;
-        align-items: end;
-    }
-
-    .nav-link{
+    margin-top: 2.5em; }
+    .motto img {
+      width: 60em; }
+  .imagenes img {
+    width: 20em; }
+  footer {
+    display: flex;
+    flex-direction: row; }
+    footer .seguinosContainer {
+      display: flex;
+      flex-direction: column; }
+      footer .seguinosContainer .footerLogoContainer img {
+        width: 3.5em !important;
+        height: 4em; }
+    footer .listaContainer ul {
+      list-style: none; }
+      footer .listaContainer ul li a {
         display: flex;
         justify-content: center;
-        font-weight: 1000;
-        font-size: 15px;
-    }
-
-    .nav-link:hover{
-        font-size: 16px;
-        color: rgb(6, 136, 45) !important;
-    }
-    .motto{
-        display: flex;
-        justify-content: center;
-        margin-top: 2.5em;
-    }
-    .motto img{
-        width: 60em;
-    }
-
-    .imagenes img{
-        width: 20em;
-    }
-    /* inicio */
-
-    /* footer */
-    footer{
-        display: flex;
-        flex-direction: row;
-    }
-    .seguinosContainer{
+        font-size: 20px !important; }
+    footer .renunciaContainer {
+      display: flex;
+      flex-direction: column; }
+      footer .renunciaContainer .logoFooterContainer {
         display: flex;
         flex-direction: column;
-    }
+        align-items: center; }
+        footer .renunciaContainer .logoFooterContainer img {
+          width: 10em !important; }
+  h1 {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center; }
+  .banner {
+    width: 24em; }
+  /* inscribirse */
+  main .ubicacionesContainer {
+    display: flex;
+    flex-direction: row; }
+    main .ubicacionesContainer .dropdown-show .btn {
+      height: 20em; }
+    main .ubicacionesContainer .dropdown-show .dropdown-menu {
+      width: 30em; }
+  /* inscribirse */
+  /* nosotros */
+  .nosotrosMainContainer .nosotrosFlexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /* nosotros */
+  /* galeria */
+  main .galeriaContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  /* galeria */ }
 
-    .listaContainer ul li a{
-       display: flex;
-       justify-content: center;
-    }
-    .listaContainer ul{
-        list-style: none;
-    }
-    .listaContainer ul li a {
-        font-size: 20px;
-    }
-    .renunciaContainer{
-        display: flex;
-        flex-direction: column;
-    }
-    .logoFooterContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .logoFooterContainer img{
-        width: 10em;
-    }
-    .footerLogoContainer img{
-        width: 4em;
-    }
-    
-    /* footer */
-
-    h1{
-        margin-top: 1em;
-        display: flex;
-        justify-content: center;
-    }
-    .banner{
-        width: 24em;
-    }
-    
-    /* inscribirse */
-    .dropdown-menu {
-        width: 30em;
-    }
-    .ubicacionesContainer{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .btn {
-        height: 20em;
-    }
-    /* inscribirse */
-
-    /* nosotros */
-    .nosotrosFlexContainer video{
-        width: 30em;
-    }
-    .nosotrosFlexContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* nosotros */
-
-    /* galeria */
-    .galeriaContainer{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-    /* galeria */
-}
-/* medias querys */
+@media (min-width: 768px) {
+  header .navbar .logoMenuContainer .morenopk img {
+    width: 20em; }
+  header .navbar .navbar-toggler .navbar-toggler-icon {
+    padding: 1.5em; }
+  header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 30px; }
+  /* inicio */
+  #parrafoInicio {
+    font-size: 30px; }
+  /* inicio */
+  /* la art du */
+  .subTitulo {
+    font-size: 35px; }
+  .parrafo {
+    font-size: 25px; }
+  /* la art du */
+  /* inscribirse */
+  .talleresNombres {
+    font-size: 30px; }
+  /* inscribirse */
+  footer .footerLogoContainer img {
+    width: 4em;
+    height: 4em; }
+  footer .listaContainer ul li a {
+    font-size: 22px; }
+  footer .renunciaContainer .logoFooterContainer img {
+    width: 45em; }
+  /* contacto */
+  .logoFlexContainer {
+    display: flex;
+    flex-direction: row; }
+    .logoFlexContainer img {
+      width: 10em; }
+  /* contacto */ }
