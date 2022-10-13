@@ -1,0 +1,140 @@
+@media  (min-width: 992px){
+    header{
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            height: 8em;
+            .logoMenuContainer{
+                a{
+                    img{
+                        width: 5em;
+                        animation-name: animacionLogoHeaderDesktop;
+                        animation-duration: 2s;
+                    }
+                }
+                .morenopk{
+                    display: flex;
+                    align-items: end;
+                    img{
+                        width: 10em !important;
+                        animation-name: animacionLogoHeaderDesktop;
+                        animation-duration: 2s;
+                    }
+                }
+            }
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            display: flex;
+                            justify-content: center;
+                            font-weight: 1000 !important;
+                            font-size: 15px !important;
+                        }
+                        .nav-link:hover{
+                            font-size: 16px !important;
+                            color: rgb(6, 136, 45) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .motto{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5em;
+        img{
+            width: 60em;
+        }
+    }
+    .imagenes {
+        img{
+        width: 20em;
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        .seguinosContainer{
+            display: flex;
+            flex-direction: column;
+            .footerLogoContainer{
+                img{
+                    width: 3.5em !important;
+                    height: 4em;
+                }
+            }
+        }
+        .listaContainer{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+        .renunciaContainer{
+            display: flex;
+            flex-direction: column;
+            .logoFooterContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 10em !important;
+                }
+            }
+        }
+    }
+
+    h1{
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .banner{
+        width: 24em;
+    }
+
+    /* inscribirse */
+    main{
+        .ubicacionesContainer{
+            display: flex;
+            flex-direction: row;
+            .dropdown-show{
+                .btn {
+                    height: 20em;
+                }
+                .dropdown-menu {
+                    width: 30em;
+                }
+            }
+        }
+    }
+    /* inscribirse */
+
+    /* nosotros */
+    .nosotrosMainContainer{
+        .nosotrosFlexContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    /* nosotros */
+    /* galeria */
+    main{
+        .galeriaContainer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    /* galeria */
+}

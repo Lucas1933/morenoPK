@@ -1,0 +1,7 @@
+@mixin textoEstilo($size,$font,$color,$weight,$align){
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    font-weight: $weight;
+    text-align: $align;
+}

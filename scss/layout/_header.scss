@@ -1,0 +1,53 @@
+header{
+    position: sticky;
+    top: 0;
+    font-family: 'Permanent Marker', cursive;
+    .navbar{
+        background-color: black !important;
+        .logoMenuContainer{
+            display: flex;
+            flex-direction: row-reverse;
+            .morenopk{
+                display: flex;
+                padding-right: 1em;
+                flex-direction: column;
+                justify-content: end;
+                img{
+                    width: 10em;
+                    animation-name: animacionLogoHeaderMobile;
+                    animation-duration: 1.5s;
+                }
+            }
+            a{
+                margin: 0;
+                img{
+                    animation-name: animacionLogoHeaderMobile;
+                    animation-duration: 1.5s;
+                }
+            }
+        }
+
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        line-height: 2.5em;
+                        font-size: 20px;
+                        color: white !important;
+                    }
+                }
+            }
+        }
+        .navbar-toggler{
+            display: flex;
+            padding-right: 0.2em;
+            flex-direction: column;
+            justify-content: end;
+            border: none; 
+        }
+        .navbar-toggler[type=button] {
+            outline: none;
+            width: 15em;
+            }
+    }
+}
