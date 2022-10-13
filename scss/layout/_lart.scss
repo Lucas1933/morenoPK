@@ -9,5 +9,12 @@ main{
             text-align: center;
             font-size: 20px;
         }
+        iframe{
+            height: 30em;
+        }
+        :nth-child(12){
+            display: block;
+            text-align: center;
+        }
     }
 }

@@ -41,20 +41,10 @@
         }
     }
 
-    .motto{
-        display: flex;
-        justify-content: center;
-        margin-top: 2.5em;
-        img{
-            width: 60em;
-        }
+    .bodyInicio{
+        background-size: cover;
+        background-position: 0em;
     }
-    .imagenes {
-        img{
-        width: 20em;
-        }
-    }
-
     footer{
         display: flex;
         flex-direction: row;

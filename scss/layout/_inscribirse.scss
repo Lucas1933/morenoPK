@@ -1,0 +1,12 @@
+main{
+    .inscribirseContenido{
+        h2{
+            text-align: center;
+            div{
+                a{
+                    @include textoEstilo(28px,$markerTypo,black,100,center);
+                }
+            }
+        }
+    }
+}
