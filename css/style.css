@@ -96,8 +96,11 @@ footer {
     display: flex;
     justify-content: space-between; }
     footer .renunciaContainer .logoFooterContainer :first-child {
-      width: 12em;
-      height: 5em; }
+      display: flex;
+      flex-direction: column-reverse; }
+      footer .renunciaContainer .logoFooterContainer :first-child img {
+        width: 10em;
+        height: 2.6em; }
     footer .renunciaContainer .logoFooterContainer :last-child {
       width: 10em; }
   footer .renunciaContainer p {
@@ -209,10 +212,9 @@ main .inscribirseContenido h2 {
       font-size: 15px !important; }
     header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
       font-size: 16px !important;
-      color: #06882d !important; }
-  .bodyInicio {
-    background-size: cover;
-    background-position: 0em; }
+      color: #06882d !important; } }
+
+@media (min-width: 992px) {
   footer {
     display: flex;
     flex-direction: row; }
@@ -220,7 +222,7 @@ main .inscribirseContenido h2 {
       display: flex;
       flex-direction: column; }
       footer .seguinosContainer .footerLogoContainer img {
-        width: 3.5em !important;
+        width: 5em !important;
         height: 4em; }
     footer .listaContainer ul {
       list-style: none; }
@@ -233,36 +235,47 @@ main .inscribirseContenido h2 {
       flex-direction: column; }
       footer .renunciaContainer .logoFooterContainer {
         display: flex;
-        flex-direction: column;
-        align-items: center; }
+        justify-content: space-evenly; }
+        footer .renunciaContainer .logoFooterContainer div {
+          padding-right: 3em;
+          display: flex;
+          align-items: flex-end; }
         footer .renunciaContainer .logoFooterContainer img {
-          width: 10em !important; }
-  h1 {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center; }
-  .banner {
-    width: 24em; }
-  /* inscribirse */
+          width: 10em !important; } }
+
+@media (min-width: 992px) {
+  .bodyInicio {
+    background-size: cover;
+    background-position: 0em; } }
+
+@media (min-width: 992px) {
+  main .galeriaContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (min-width: 992px) {
   main .ubicacionesContainer {
     display: flex;
     flex-direction: row; }
     main .ubicacionesContainer .dropdown-show .btn {
       height: 20em; }
     main .ubicacionesContainer .dropdown-show .dropdown-menu {
-      width: 30em; }
-  /* inscribirse */
-  /* nosotros */
+      width: 30em; } }
+
+@media (min-width: 992px) {
   .nosotrosMainContainer .nosotrosFlexContainer {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  /* nosotros */
-  /* galeria */
-  main .galeriaContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-  /* galeria */ }
+    align-items: center; } }
+
+@media (min-width: 768px) {
+  footer .footerLogoContainer img {
+    width: 4em;
+    height: 4em; }
+  footer .listaContainer ul li a {
+    font-size: 22px; }
+  footer .renunciaContainer .logoFooterContainer img {
+    width: 45em; } }
 
 @media (min-width: 768px) {
   header .navbar .logoMenuContainer .morenopk img {
@@ -270,32 +283,4 @@ main .inscribirseContenido h2 {
   header .navbar .navbar-toggler .navbar-toggler-icon {
     padding: 1.5em; }
   header .navbar .collapse .navbar-nav .nav-item .nav-link {
-    font-size: 30px; }
-  /* inicio */
-  #parrafoInicio {
-    font-size: 30px; }
-  /* inicio */
-  /* la art du */
-  .subTitulo {
-    font-size: 35px; }
-  .parrafo {
-    font-size: 25px; }
-  /* la art du */
-  /* inscribirse */
-  .talleresNombres {
-    font-size: 30px; }
-  /* inscribirse */
-  footer .footerLogoContainer img {
-    width: 4em;
-    height: 4em; }
-  footer .listaContainer ul li a {
-    font-size: 22px; }
-  footer .renunciaContainer .logoFooterContainer img {
-    width: 45em; }
-  /* contacto */
-  .logoFlexContainer {
-    display: flex;
-    flex-direction: row; }
-    .logoFlexContainer img {
-      width: 10em; }
-  /* contacto */ }
+    font-size: 30px; } }

@@ -1,0 +1,16 @@
+@media  (min-width: 992px){
+    main{
+        .ubicacionesContainer{
+            display: flex;
+            flex-direction: row;
+            .dropdown-show{
+                .btn {
+                    height: 20em;
+                }
+                .dropdown-menu {
+                    width: 30em;
+                }
+            }
+        }
+    }
+}

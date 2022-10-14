@@ -1,0 +1,26 @@
+@media  (min-width: 768px){
+    footer{
+        .footerLogoContainer{
+            img{
+                width: 4em;
+                height: 4em;
+            }
+        }
+        .listaContainer{
+            ul{
+                li{
+                    a{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .renunciaContainer{
+            .logoFooterContainer{
+                img{
+                    width: 45em;
+                }
+            }
+        }
+    }
+}

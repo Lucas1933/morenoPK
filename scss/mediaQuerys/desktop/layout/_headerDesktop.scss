@@ -1,0 +1,43 @@
+@media  (min-width: 992px){
+    header{
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            height: 8em;
+            .logoMenuContainer{
+                a{
+                    img{
+                        width: 5em;
+                        animation-name: animacionLogoHeaderDesktop;
+                        animation-duration: 2s;
+                    }
+                }
+                .morenopk{
+                    display: flex;
+                    align-items: end;
+                    img{
+                        width: 10em !important;
+                        animation-name: animacionLogoHeaderDesktop;
+                        animation-duration: 2s;
+                    }
+                }
+            }
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            display: flex;
+                            justify-content: center;
+                            font-weight: 1000 !important;
+                            font-size: 15px !important;
+                        }
+                        .nav-link:hover{
+                            font-size: 16px !important;
+                            color: rgb(6, 136, 45) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
