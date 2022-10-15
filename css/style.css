@@ -80,16 +80,18 @@ footer {
     footer .seguinosContainer .footerLogoContainer img {
       width: 2.5em;
       height: 2.5em; }
-  footer .listaContainer ul {
-    line-height: 5em;
-    text-align: center; }
-    footer .listaContainer ul li a {
-      text-decoration: none;
-      font-size: 20px;
-      font-family: "Permanent Marker", cursive;
-      color: white;
-      font-weight: 100;
+  footer .listaContainer {
+    padding-top: 5em; }
+    footer .listaContainer ul {
+      line-height: 5em;
       text-align: center; }
+      footer .listaContainer ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Permanent Marker", cursive;
+        color: white;
+        font-weight: 100;
+        text-align: center; }
   footer .renunciaContainer .logoFooterContainer {
     display: flex;
     justify-content: space-between; }
