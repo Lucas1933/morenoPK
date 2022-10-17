@@ -13,6 +13,7 @@
 
 header {
   position: sticky;
+  z-index: 10;
   top: 0;
   font-family: 'Permanent Marker', cursive; }
   header .navbar {
@@ -175,10 +176,20 @@ main .faqContenido :nth-child(13) {
 main .faqContenido :last-child {
   text-align: center; }
 
-.nosotrosContenido h2 {
+.nosotrosContenido .nosotrosTexto {
   text-align: center;
+  font-size: 25px; }
+
+.nosotrosContenido .pieDePagina {
+  margin-top: 2.5em;
+  font-size: 35px;
   text-align: center;
-  font-size: 20px; }
+  font-family: "Permanent Marker", cursive; }
+  .nosotrosContenido .pieDePagina .pieDePaginaSilueta {
+    display: flex;
+    justify-content: center; }
+    .nosotrosContenido .pieDePagina .pieDePaginaSilueta img {
+      width: 5em; }
 
 main .inscribirseContenido h2 {
   text-align: center; }
