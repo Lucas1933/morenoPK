@@ -118,20 +118,23 @@ footer {
   font-weight: 500;
   text-align: center; }
 
-.bodyInicio {
-  background-image: url("./../../assets/images/fondoinicio.jpeg");
-  background-position-x: center;
-  background-repeat: no-repeat;
-  background-position-x: -9em; }
-  .bodyInicio main {
-    background-color: rgba(255, 255, 255, 0.166); }
-    .bodyInicio main .inicioContenido .parrafo {
-      font-size: 28px;
-      font-family: "Permanent Marker";
-      color: black;
-      font-weight: 0;
-      text-align: center;
-      letter-spacing: 1px; }
+.bodyInicio main .inicioContenido #carouselInicio {
+  position: absolute;
+  z-index: -1; }
+  .bodyInicio main .inicioContenido #carouselInicio .carousel-inner .carousel-item img {
+    width: 100vh !important;
+    padding-right: 20em !important; }
+
+.bodyInicio main .inicioContenido .parrafo {
+  padding-top: 18em;
+  background: white;
+  background: linear-gradient(0deg, white 0%, white 33%, rgba(255, 255, 255, 0) 79%);
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 0;
+  text-align: center;
+  letter-spacing: 1px; }
 
 main .lartContenido .subTitulo {
   font-size: 28px;
@@ -141,6 +144,7 @@ main .lartContenido .subTitulo {
   text-align: center; }
 
 main .lartContenido .parrafo {
+  font-family: 'Alegreya', serif;
   text-align: center;
   font-size: 20px; }
 
@@ -159,8 +163,11 @@ main .faqContenido .subTitulo {
   text-align: center; }
 
 main .faqContenido .parrafo {
+  font-family: 'Alegreya', serif;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-right: 1em;
+  padding-left: 1em; }
   main .faqContenido .parrafo a {
     font-family: "Permanent Marker";
     color: black; }

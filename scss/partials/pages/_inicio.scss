@@ -1,14 +1,26 @@
 .bodyInicio{
-    background-image: url("./../../assets/images/fondoinicio.jpeg");
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-position-x: -9em;
     main{
-        background-color: rgba(255, 255, 255, 0.166);
         .inicioContenido{
+            #carouselInicio{
+                position: absolute;
+                z-index: -1;
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            width: 100vh !important;
+                            padding-right: 20em !important;
+                        }
+                    }
+                }
+
+            }
             .parrafo{
-            @include textoEstilo(28px,$markerTypo,black,0,center);
-            letter-spacing: 1px;
+                padding-top: 18em; 
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 79%);
+                @include textoEstilo(28px,$markerTypo,black,0,center);
+                letter-spacing: 1px;
+
             }
         }
     }
