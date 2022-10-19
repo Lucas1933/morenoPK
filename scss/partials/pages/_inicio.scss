@@ -17,11 +17,81 @@
             .parrafo{
                 padding-top: 18em; 
                 background: rgb(255,255,255);
-                background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 79%);
+                background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 59%);
                 @include textoEstilo(28px,$markerTypo,black,0,center);
                 letter-spacing: 1px;
-
+            }
+            .botones{
+                .botonFaq{
+                    .btnFaqImg{
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        z-index: -1;
+                            img{
+                                width: 20em;
+                                border-style: solid;
+                                border-radius: 6em;
+                                }
+                            
+                    }
+                    .btnFaqText{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-top: 3em;
+                        padding-bottom: 4em;
+                        background-color: rgba(255, 255, 255, 0.303);
+                        @include textoEstilo(28px,$markerTypo,black,0,center);
+                    }
+                }
+                .botonNosotros{
+                    .btnNosotrosImg{
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        z-index: -1;
+                        img{
+                            width: 20em;
+                            border-style: solid;
+                            border-radius: 6em;
+                        }
+                    }
+                    .btnNosotrosText{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-top: 3em;
+                        padding-bottom: 4em;
+                        background-color: rgba(255, 255, 255, 0.303);
+                        @include textoEstilo(28px,$markerTypo,black,0,center);
+                    }
+                }
+                .botonContacto{
+                    .btnContactoImg{
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        z-index: -1;
+                        img{
+                            width: 20em;
+                            border-style: solid;
+                            border-radius: 6em;
+                        }
+                    }
+                    .btnContactoText{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-top: 3em;
+                        padding-bottom: 4em;
+                        background-color: rgba(255, 255, 255, 0.303);
+                        @include textoEstilo(28px,$markerTypo,black,0,center);
+                    }
+                }
+                
             }
         }
     }
+    
 }

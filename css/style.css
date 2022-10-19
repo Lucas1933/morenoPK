@@ -118,6 +118,17 @@ footer {
   font-weight: 500;
   text-align: center; }
 
+.pieDePagina {
+  margin-top: 2.5em;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive; }
+  .pieDePagina .pieDePaginaSilueta {
+    display: flex;
+    justify-content: center; }
+    .pieDePagina .pieDePaginaSilueta img {
+      width: 5em; }
+
 .bodyInicio main .inicioContenido #carouselInicio {
   position: absolute;
   z-index: -1; }
@@ -128,13 +139,82 @@ footer {
 .bodyInicio main .inicioContenido .parrafo {
   padding-top: 18em;
   background: white;
-  background: linear-gradient(0deg, white 0%, white 33%, rgba(255, 255, 255, 0) 79%);
+  background: linear-gradient(0deg, white 0%, white 34%, rgba(255, 255, 255, 0) 59%);
   font-size: 28px;
   font-family: "Permanent Marker";
   color: black;
   font-weight: 0;
   text-align: center;
   letter-spacing: 1px; }
+
+.bodyInicio main .inicioContenido .botones .botonFaq .btnFaqImg {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: -1; }
+  .bodyInicio main .inicioContenido .botones .botonFaq .btnFaqImg img {
+    width: 20em;
+    border-style: solid;
+    border-radius: 6em; }
+
+.bodyInicio main .inicioContenido .botones .botonFaq .btnFaqText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgba(255, 255, 255, 0.303);
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 0;
+  text-align: center; }
+
+.bodyInicio main .inicioContenido .botones .botonNosotros .btnNosotrosImg {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: -1; }
+  .bodyInicio main .inicioContenido .botones .botonNosotros .btnNosotrosImg img {
+    width: 20em;
+    border-style: solid;
+    border-radius: 6em; }
+
+.bodyInicio main .inicioContenido .botones .botonNosotros .btnNosotrosText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgba(255, 255, 255, 0.303);
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 0;
+  text-align: center; }
+
+.bodyInicio main .inicioContenido .botones .botonContacto .btnContactoImg {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: -1; }
+  .bodyInicio main .inicioContenido .botones .botonContacto .btnContactoImg img {
+    width: 20em;
+    border-style: solid;
+    border-radius: 6em; }
+
+.bodyInicio main .inicioContenido .botones .botonContacto .btnContactoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgba(255, 255, 255, 0.303);
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 0;
+  text-align: center; }
 
 main .lartContenido .subTitulo {
   font-size: 28px;
@@ -186,17 +266,6 @@ main .faqContenido :last-child {
 .nosotrosContenido .nosotrosTexto {
   text-align: center;
   font-size: 25px; }
-
-.nosotrosContenido .pieDePagina {
-  margin-top: 2.5em;
-  font-size: 35px;
-  text-align: center;
-  font-family: "Permanent Marker", cursive; }
-  .nosotrosContenido .pieDePagina .pieDePaginaSilueta {
-    display: flex;
-    justify-content: center; }
-    .nosotrosContenido .pieDePagina .pieDePaginaSilueta img {
-      width: 5em; }
 
 main .inscribirseContenido h2 {
   text-align: center; }

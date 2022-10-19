@@ -1,0 +1,14 @@
+.pieDePagina{
+    margin-top: 2.5em;
+    font-size: 35px;
+    text-align: center;
+    font-family: $markerTypoCursive;
+    .pieDePaginaSilueta{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 5em;
+        }
+        
+    }
+}
