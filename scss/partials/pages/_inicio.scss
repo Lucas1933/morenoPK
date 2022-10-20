@@ -31,6 +31,9 @@
                                 width: 20em;
                                 border-style: solid;
                                 border-radius: 6em;
+                                border-width: 0.3em;
+                                box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+                                
                                 }
                     }
                     .btnText{
@@ -51,12 +54,12 @@
 
                 }
                 .botonContainer:active{
-                    transform: scale(1.5);
+                    
                     .botonImgContainer{
                         z-index: 1;
                         .btnImg{
                             border-color: green;
-                            border-width: 0.3em;
+                            box-shadow: inset 0px 1px 0px #000000, inset 0px 6px 0px #000000;
                         }
                     }
                     .btnText{

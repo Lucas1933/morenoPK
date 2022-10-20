@@ -155,7 +155,9 @@ footer {
   .bodyInicio main .inicioContenido .botones .botonContainer .botonImgContainer .btnImg {
     width: 20em;
     border-style: solid;
-    border-radius: 6em; }
+    border-radius: 6em;
+    border-width: 0.3em;
+    box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000; }
 
 .bodyInicio main .inicioContenido .botones .botonContainer .btnText a {
   display: flex;
@@ -174,16 +176,15 @@ footer {
 .bodyInicio main .inicioContenido .botones .botonContainer .btnText a:active {
   color: green; }
 
-.bodyInicio main .inicioContenido .botones .botonContainer:active {
-  transform: scale(1.5); }
-  .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer {
-    z-index: 1; }
-    .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer .btnImg {
-      border-color: green;
-      border-width: 0.3em; }
-  .bodyInicio main .inicioContenido .botones .botonContainer:active .btnText a {
-    position: relative;
-    z-index: 2; }
+.bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer {
+  z-index: 1; }
+  .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer .btnImg {
+    border-color: green;
+    box-shadow: inset 0px 1px 0px #000000, inset 0px 6px 0px #000000; }
+
+.bodyInicio main .inicioContenido .botones .botonContainer:active .btnText a {
+  position: relative;
+  z-index: 2; }
 
 main .lartContenido .subTitulo {
   font-size: 28px;
