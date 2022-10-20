@@ -12,7 +12,6 @@
                         }
                     }
                 }
-
             }
             .parrafo{
                 padding-top: 18em; 
@@ -22,74 +21,51 @@
                 letter-spacing: 1px;
             }
             .botones{
-                .botonFaq{
-                    .btnFaqImg{
+                .botonContainer{
+                    .botonImgContainer{
                         display: flex;
                         justify-content: center;
                         position: absolute;
                         z-index: -1;
-                            img{
+                            .btnImg{
                                 width: 20em;
                                 border-style: solid;
                                 border-radius: 6em;
                                 }
-                            
                     }
-                    .btnFaqText{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        padding-top: 3em;
-                        padding-bottom: 4em;
-                        background-color: rgba(255, 255, 255, 0.303);
-                        @include textoEstilo(28px,$markerTypo,black,0,center);
-                    }
-                }
-                .botonNosotros{
-                    .btnNosotrosImg{
-                        display: flex;
-                        justify-content: center;
-                        position: absolute;
-                        z-index: -1;
-                        img{
-                            width: 20em;
-                            border-style: solid;
-                            border-radius: 6em;
+                    .btnText{
+                        a{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-decoration: none;
+                            padding-top: 3em;
+                            padding-bottom: 4em;
+                            background-color: rgba(255, 255, 255, 0.303);
+                            @include textoEstilo(28px,$markerTypo,black,0,center);
+                        }
+                        a:active{
+                            color: green;
                         }
                     }
-                    .btnNosotrosText{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        padding-top: 3em;
-                        padding-bottom: 4em;
-                        background-color: rgba(255, 255, 255, 0.303);
-                        @include textoEstilo(28px,$markerTypo,black,0,center);
-                    }
+
                 }
-                .botonContacto{
-                    .btnContactoImg{
-                        display: flex;
-                        justify-content: center;
-                        position: absolute;
-                        z-index: -1;
-                        img{
-                            width: 20em;
-                            border-style: solid;
-                            border-radius: 6em;
+                .botonContainer:active{
+                    transform: scale(1.5);
+                    .botonImgContainer{
+                        z-index: 1;
+                        .btnImg{
+                            border-color: green;
+                            border-width: 0.3em;
                         }
                     }
-                    .btnContactoText{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        padding-top: 3em;
-                        padding-bottom: 4em;
-                        background-color: rgba(255, 255, 255, 0.303);
-                        @include textoEstilo(28px,$markerTypo,black,0,center);
+                    .btnText{
+                        a{
+                            position: relative;
+                            z-index: 2;
+                        }
                     }
                 }
-                
             }
         }
     }

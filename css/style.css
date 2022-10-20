@@ -147,20 +147,21 @@ footer {
   text-align: center;
   letter-spacing: 1px; }
 
-.bodyInicio main .inicioContenido .botones .botonFaq .btnFaqImg {
+.bodyInicio main .inicioContenido .botones .botonContainer .botonImgContainer {
   display: flex;
   justify-content: center;
   position: absolute;
   z-index: -1; }
-  .bodyInicio main .inicioContenido .botones .botonFaq .btnFaqImg img {
+  .bodyInicio main .inicioContenido .botones .botonContainer .botonImgContainer .btnImg {
     width: 20em;
     border-style: solid;
     border-radius: 6em; }
 
-.bodyInicio main .inicioContenido .botones .botonFaq .btnFaqText {
+.bodyInicio main .inicioContenido .botones .botonContainer .btnText a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
   padding-top: 3em;
   padding-bottom: 4em;
   background-color: rgba(255, 255, 255, 0.303);
@@ -170,51 +171,19 @@ footer {
   font-weight: 0;
   text-align: center; }
 
-.bodyInicio main .inicioContenido .botones .botonNosotros .btnNosotrosImg {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: -1; }
-  .bodyInicio main .inicioContenido .botones .botonNosotros .btnNosotrosImg img {
-    width: 20em;
-    border-style: solid;
-    border-radius: 6em; }
+.bodyInicio main .inicioContenido .botones .botonContainer .btnText a:active {
+  color: green; }
 
-.bodyInicio main .inicioContenido .botones .botonNosotros .btnNosotrosText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 3em;
-  padding-bottom: 4em;
-  background-color: rgba(255, 255, 255, 0.303);
-  font-size: 28px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 0;
-  text-align: center; }
-
-.bodyInicio main .inicioContenido .botones .botonContacto .btnContactoImg {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: -1; }
-  .bodyInicio main .inicioContenido .botones .botonContacto .btnContactoImg img {
-    width: 20em;
-    border-style: solid;
-    border-radius: 6em; }
-
-.bodyInicio main .inicioContenido .botones .botonContacto .btnContactoText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 3em;
-  padding-bottom: 4em;
-  background-color: rgba(255, 255, 255, 0.303);
-  font-size: 28px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 0;
-  text-align: center; }
+.bodyInicio main .inicioContenido .botones .botonContainer:active {
+  transform: scale(1.5); }
+  .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer {
+    z-index: 1; }
+    .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer .btnImg {
+      border-color: green;
+      border-width: 0.3em; }
+  .bodyInicio main .inicioContenido .botones .botonContainer:active .btnText a {
+    position: relative;
+    z-index: 2; }
 
 main .lartContenido .subTitulo {
   font-size: 28px;
