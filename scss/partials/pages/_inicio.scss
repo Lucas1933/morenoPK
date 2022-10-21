@@ -1,6 +1,7 @@
 .bodyInicio{
     main{
         .inicioContenido{
+            overflow: hidden;
             #carouselInicio{
                 position: absolute;
                 z-index: -1;
@@ -31,9 +32,9 @@
                                 width: 20em;
                                 border-style: solid;
                                 border-radius: 6em;
-                                border-width: 0.3em;
+                                border-width: 10px;
                                 box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
-                                
+                                background-color: rgba(255, 255, 255, 0.303);
                                 }
                     }
                     .btnText{
@@ -44,7 +45,6 @@
                             text-decoration: none;
                             padding-top: 3em;
                             padding-bottom: 4em;
-                            background-color: rgba(255, 255, 255, 0.303);
                             @include textoEstilo(28px,$markerTypo,black,0,center);
                         }
                         a:active{

@@ -2,6 +2,7 @@
 @import "../utilities/mixins";
 main{
     .faqContenido{
+        overflow: hidden;
         .subTitulo{
             @include textoEstilo(28px,$markerTypo,black,100,center);
         }
@@ -14,6 +15,11 @@ main{
             a{
                 font-family: $markerTypo;
                 color: black;
+                text-decoration: none;
+            }
+            a:active{
+                text-decoration: none;
+                color: green;
             }
         }
         :nth-child(11){
