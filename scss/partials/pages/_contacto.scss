@@ -1,0 +1,16 @@
+.contactoContenido{
+    .logoFlexContainer{
+        p{
+            display: flex;
+            justify-content: center;
+            @include textoEstilo(28px,$markerTypo,black,100,center);
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            .redSocialLogo{
+                width: 10em;
+            }
+        }
+    }
+}

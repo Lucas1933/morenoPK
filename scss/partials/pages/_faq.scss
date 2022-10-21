@@ -7,11 +7,6 @@ main{
             @include textoEstilo(28px,$markerTypo,black,100,center);
         }
         .parrafo{
-            font-family: 'Alegreya', serif;
-            text-align: center;
-            font-size: 20px;
-            padding-right: 1em;
-            padding-left: 1em;
             a{
                 font-family: $markerTypo;
                 color: black;
@@ -31,7 +26,7 @@ main{
             text-align: center;
         }
         :last-child{
-                text-align: center;
+            text-align: center;
         }
     }
 

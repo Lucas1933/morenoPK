@@ -137,6 +137,13 @@ footer {
     .pieDePagina .pieDePaginaSilueta img {
       width: 5em; }
 
+.parrafo {
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  font-size: 20px;
+  padding-right: 1em;
+  padding-left: 1em; }
+
 .bodyInicio main .inicioContenido {
   overflow: hidden; }
   .bodyInicio main .inicioContenido #carouselInicio {
@@ -145,7 +152,7 @@ footer {
     .bodyInicio main .inicioContenido #carouselInicio .carousel-inner .carousel-item img {
       width: 100vh !important;
       padding-right: 20em !important; }
-  .bodyInicio main .inicioContenido .parrafo {
+  .bodyInicio main .inicioContenido .parrafoInicio {
     padding-top: 18em;
     background: white;
     background: linear-gradient(0deg, white 0%, white 34%, rgba(255, 255, 255, 0) 59%);
@@ -197,11 +204,6 @@ main .lartContenido .subTitulo {
   font-weight: 100;
   text-align: center; }
 
-main .lartContenido .parrafo {
-  font-family: 'Alegreya', serif;
-  text-align: center;
-  font-size: 20px; }
-
 main .lartContenido iframe {
   height: 30em; }
 
@@ -217,19 +219,13 @@ main .faqContenido {
     color: black;
     font-weight: 100;
     text-align: center; }
-  main .faqContenido .parrafo {
-    font-family: 'Alegreya', serif;
-    text-align: center;
-    font-size: 20px;
-    padding-right: 1em;
-    padding-left: 1em; }
-    main .faqContenido .parrafo a {
-      font-family: "Permanent Marker";
-      color: black;
-      text-decoration: none; }
-    main .faqContenido .parrafo a:active {
-      text-decoration: none;
-      color: green; }
+  main .faqContenido .parrafo a {
+    font-family: "Permanent Marker";
+    color: black;
+    text-decoration: none; }
+  main .faqContenido .parrafo a:active {
+    text-decoration: none;
+    color: green; }
   main .faqContenido :nth-child(11) {
     display: block;
     text-align: center; }
@@ -241,10 +237,6 @@ main .faqContenido {
 
 .nosotrosContenido {
   overflow: hidden; }
-  .nosotrosContenido .nosotrosTexto {
-    font-family: 'Alegreya', serif;
-    text-align: center;
-    font-size: 25px; }
   .nosotrosContenido .carousel {
     display: flex;
     justify-content: center; }
@@ -268,6 +260,21 @@ main .inscribirseContenido h2 {
     color: black;
     font-weight: 100;
     text-align: center; }
+
+.contactoContenido .logoFlexContainer p {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-family: "Permanent Marker";
+  color: black;
+  font-weight: 100;
+  text-align: center; }
+
+.contactoContenido .logoFlexContainer a {
+  display: flex;
+  justify-content: center; }
+  .contactoContenido .logoFlexContainer a .redSocialLogo {
+    width: 10em; }
 
 @media (min-width: 992px) {
   header .navbar {
