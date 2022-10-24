@@ -137,7 +137,7 @@ footer {
     .pieDePagina .pieDePaginaSilueta img {
       width: 5em; }
 
-.parrafo {
+.parrafo, main .inscribirseContenido .dropdown .dropdown-menu p, main .inscribirseContenido .dropdown .dropdown-menu form {
   font-family: 'Alegreya', serif;
   text-align: center;
   font-size: 20px;
@@ -219,11 +219,11 @@ main .faqContenido {
     color: black;
     font-weight: 100;
     text-align: center; }
-  main .faqContenido .parrafo a {
+  main .faqContenido .parrafo a, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu p a, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido p a, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu form a, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido form a {
     font-family: "Permanent Marker";
     color: black;
     text-decoration: none; }
-  main .faqContenido .parrafo a:active {
+  main .faqContenido .parrafo a:active, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu p a:active, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido p a:active, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu form a:active, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido form a:active {
     text-decoration: none;
     color: green; }
   main .faqContenido :nth-child(11) {
@@ -252,14 +252,45 @@ main .faqContenido {
       border: 10px solid #000000;
       border-radius: 35px 35px 35px 35px; }
 
-main .inscribirseContenido h2 {
-  text-align: center; }
-  main .inscribirseContenido h2 div a {
+main .inscribirseContenido p {
+  font-size: 24px; }
+  main .inscribirseContenido p a {
     font-size: 28px;
     font-family: "Permanent Marker";
     color: black;
     font-weight: 100;
     text-align: center; }
+
+main .inscribirseContenido .dropdown {
+  display: flex;
+  justify-content: center; }
+  main .inscribirseContenido .dropdown p {
+    text-align: center; }
+  main .inscribirseContenido .dropdown #dropdownMenuButton {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 12em;
+    border: 5px solid #000000;
+    border-radius: 31px 31px 31px 31px;
+    font-size: 28px;
+    font-family: "Permanent Marker";
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    background-image: url("../../../assets/images/inscribirse/hospital.jpeg");
+    background-size: cover; }
+  main .inscribirseContenido .dropdown .dropdown-menu {
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 5px solid #000000;
+    border-radius: 31px 31px 31px 31px;
+    overflow: hidden; }
+    main .inscribirseContenido .dropdown .dropdown-menu p {
+      font-size: 25px; }
+    main .inscribirseContenido .dropdown .dropdown-menu .ubicacionGoogleMapa {
+      border: 5px solid #6e6e6e; }
+    main .inscribirseContenido .dropdown .dropdown-menu form {
+      text-align: left; }
 
 .contactoContenido .logoFlexContainer p {
   display: flex;

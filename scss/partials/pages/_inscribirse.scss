@@ -1,12 +1,47 @@
 main{
     .inscribirseContenido{
-        h2{
-            text-align: center;
-            div{
-                a{
-                    @include textoEstilo(28px,$markerTypo,black,100,center);
+
+        p{
+            font-size: 24px;
+            a{
+                @include textoEstilo(28px,$markerTypo,black,100,center);
+            }
+        }
+        .dropdown{
+            display: flex;
+            justify-content: center;
+            p{
+                text-align: center;
+            }
+            #dropdownMenuButton{
+                padding-top: 3em;
+                padding-bottom: 3em;
+                width: 12em;
+                border: 5px solid #000000;
+                border-radius: 31px 31px 31px 31px;
+                @include textoEstilo(28px,$markerTypo,rgb(255, 255, 255),100,center);
+                background-image: url("../../../assets/images/inscribirse/hospital.jpeg");
+                background-size: cover;
+            }
+            .dropdown-menu{
+                padding-left: 1em;
+                padding-right: 1em;
+                border: 5px solid #000000;
+                border-radius: 31px 31px 31px 31px;
+                overflow: hidden;
+                p{
+                    @extend .parrafo;
+                    font-size: 25px;
+                }
+                .ubicacionGoogleMapa{
+                    border: 5px solid #6e6e6e;
+                }
+                form{
+                    @extend .parrafo;
+                    text-align: left;
                 }
             }
+            
         }
     }
 }

@@ -14,8 +14,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/logos/posibleLogo.png">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lato&family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Moreno PK | Inscribirse</title>
 </head>
 
@@ -71,120 +70,62 @@
     </header>
     <!--barra navegable-->
     <h1 class="encabezado">Inscribirse</h1>
-    
-   
+    <div class="banner"> <img src="../assets/images/banners/inscribirse.jpeg" alt=""></div>
     <main>
         <div class="inscribirseContenido">
-            <h2>
+            <p class="parrafo">
                 Aca vas a poder ver la ubicacion de nuestros talleres e inscribirte a cualquiera de
                 ellos. <br> Si tenes alguna duda hace click aca! <br>
-                <div class="contactoContainer"><a href="./contacto.html">Contactanos</a></div>
-            </h2>
-            <div class="ubicacionesContainer">
-                <!-- BOTON------------------------------------------------------------------------------------->
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <p class="talleresNombres">Hospital Viejo</p> 
-                    </a>
-                
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <p>Av.Libertador 4569</p> 
-                        <iframe class="ubicacionGoogleMapa"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.973935922397!2d-58.79247407704282!3d-34.64855336760105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1662479154283!5m2!1ses!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <form>
-                            <label for="nombreApellido">Nombre y apellido</label>
-                            <input type="text" id="nombreApellido" name="user_name">
-                            
-                            <label for="email">Correo Electronico</label>
-                            <input type="email" id="email" name="user_email">     
-                            <div class="labelContainer">
-                                <label for="edad">Edad: 10-12</label>
-                                <label for="edad"> 13-15</label>
-                                <label for="edad"> 16-18</label>
-                                <label for="edad"> 18+</label>
-                            </div>
-                            <div class="inputContainer">
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age">
-                            </div>
-                            <button type="submit">Inscribirse</button>
-                        </form>
-                    </div>
+                <a href="./contacto.html">Contactanos</a>
+            </p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hospital Viejo
+                </button>
+                <div class="dropdown-menu" class="fixed-bottom" aria-labelledby="dropdownMenuButton">
+                    <p>Bartolome Mitre 3050</p>
+                    <iframe class="ubicacionGoogleMapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.2257749300707!2d-58.790748484221396!3d-34.64900066923659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9551e8ccb33d%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1662479269582!5m2!1ses!2sar"
+                    style="border:1;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <form>
+                        <div class="form-group">
+                          <label for="nombreApellido">Nombre y apellido</label>
+                          <input type="text" class="form-control" id="inputNombreApellido" >
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-check">
+                            <label for="">Edad</label>
+                            <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
+                            <label class="form-check-label" for="edad1012">
+                              10-12
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                            <label class="form-check-label" for="edad1315">
+                              13-15
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                            <label class="form-check-label" for="edad1618">
+                              16-18
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                            <label class="form-check-label" for="edad18">
+                              18+
+                            </label>
+                          </div>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                      </form>
                 </div>
-                <!-- BOTON------------------------------------------------------------------------------------->
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <p class="talleresNombres">Plaza Bujan</p> 
-                    </a>
-                
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <p>Bartolome Mitre 5162</p> 
-                        <iframe class="ubicacionGoogleMapa"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.216152155672!2d-58.7717747!3d-34.6533382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb57d7ed6436bb3!2sPlaza%20Bujan!5e0!3m2!1ses!2sar!4v1662478965914!5m2!1ses!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <form>
-                            <label for="nombreApellido">Nombre y apellido</label>
-                            <input type="text" id="nombreApellido" name="user_name">
-                            
-                            <label for="email">Correo Electronico</label>
-                            <input type="email" id="email" name="user_email">     
-                            <div class="labelContainer">
-                                <label for="edad">Edad: 10-12</label>
-                                <label for="edad"> 13-15</label>
-                                <label for="edad"> 16-18</label>
-                                <label for="edad"> 18+</label>
-                            </div>
-                            <div class="inputContainer">
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age">
-                            </div>
-                            <button type="submit">Inscribirse</button>
-                        </form>
-                    </div>
-                </div>
-                <!-- BOTON------------------------------------------------------------------------------------->
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <p class="talleresNombres">Plaza San Martin</p> 
-                    </a>
-                
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <p>Bartolome Mitre 3050</p> 
-                        <iframe class="ubicacionGoogleMapa"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.2257749300707!2d-58.790748484221396!3d-34.64900066923659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9551e8ccb33d%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1662479269582!5m2!1ses!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <form>
-                            <label for="nombreApellido">Nombre y apellido</label>
-                            <input type="text" id="nombreApellido" name="user_name">
-                            
-                            <label for="email">Correo Electronico</label>
-                            <input type="email" id="email" name="user_email">     
-                            <div class="labelContainer">
-                                <label for="edad">Edad: 10-12</label>
-                                <label for="edad"> 13-15</label>
-                                <label for="edad"> 16-18</label>
-                                <label for="edad"> 18+</label>
-                            </div>
-                            <div class="inputContainer">
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age"> 
-                                <input type="checkbox" id="edad" name="user_age">
-                            </div>
-                            <button type="submit">Inscribirse</button>
-                        </form>
-                    </div>
-                </div>
-                <!-- BOTON------------------------------------------------------------------------------------->
-            </div>
+              </div>
         </div>
     </main>
             
