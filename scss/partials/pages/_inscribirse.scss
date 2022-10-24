@@ -1,6 +1,5 @@
 main{
     .inscribirseContenido{
-
         p{
             font-size: 24px;
             a{
@@ -32,6 +31,7 @@ main{
                 p{
                     @extend .parrafo;
                     font-size: 25px;
+                    text-decoration: underline;
                 }
                 .ubicacionGoogleMapa{
                     border: 5px solid #6e6e6e;
@@ -39,6 +39,13 @@ main{
                 form{
                     @extend .parrafo;
                     text-align: left;
+                }
+                select{
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                button{
+                    margin-top: 1em;
                 }
             }
             
