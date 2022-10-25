@@ -127,6 +127,7 @@ footer {
     border-radius: 35px 35px 35px 35px; }
 
 .pieDePagina {
+  overflow-x: hidden;
   margin-top: 2.5em;
   font-size: 35px;
   text-align: center;
@@ -252,51 +253,78 @@ main .faqContenido {
       border: 10px solid #000000;
       border-radius: 35px 35px 35px 35px; }
 
-main .inscribirseContenido p {
-  font-size: 24px; }
-  main .inscribirseContenido p a {
-    font-size: 28px;
-    font-family: "Permanent Marker";
-    color: black;
-    font-weight: 100;
-    text-align: center; }
-
-main .inscribirseContenido .dropdown {
+main .inscribirseContenido {
   display: flex;
-  justify-content: center; }
-  main .inscribirseContenido .dropdown p {
-    text-align: center; }
-  main .inscribirseContenido .dropdown #dropdownMenuButton {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    width: 12em;
-    border: 5px solid #000000;
-    border-radius: 31px 31px 31px 31px;
-    font-size: 28px;
-    font-family: "Permanent Marker";
-    color: white;
-    font-weight: 100;
-    text-align: center;
-    background-image: url("../../../assets/images/inscribirse/hospital.jpeg");
-    background-size: cover; }
-  main .inscribirseContenido .dropdown .dropdown-menu {
-    padding-left: 1em;
-    padding-right: 1em;
-    border: 5px solid #000000;
-    border-radius: 31px 31px 31px 31px;
-    overflow: hidden; }
-    main .inscribirseContenido .dropdown .dropdown-menu p {
-      font-size: 25px;
-      text-decoration: underline; }
-    main .inscribirseContenido .dropdown .dropdown-menu .ubicacionGoogleMapa {
-      border: 5px solid #6e6e6e; }
-    main .inscribirseContenido .dropdown .dropdown-menu form {
-      text-align: left; }
-    main .inscribirseContenido .dropdown .dropdown-menu select {
-      margin-top: 1em;
-      margin-bottom: 1em; }
-    main .inscribirseContenido .dropdown .dropdown-menu button {
-      margin-top: 1em; }
+  flex-direction: column;
+  align-content: center; }
+  main .inscribirseContenido p {
+    font-size: 24px; }
+    main .inscribirseContenido p a {
+      font-size: 28px;
+      font-family: "Permanent Marker";
+      color: black;
+      font-weight: 100;
+      text-align: center; }
+  main .inscribirseContenido .dropdown {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2em; }
+    main .inscribirseContenido .dropdown p {
+      text-align: center; }
+    main .inscribirseContenido .dropdown .botonDesplegable {
+      padding-top: 3em;
+      padding-bottom: 3em;
+      width: 12em;
+      background-size: cover;
+      border: solid #000000;
+      border-radius: 6em;
+      border-width: 10px;
+      box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+      font-size: 28px;
+      font-family: "Permanent Marker";
+      color: white;
+      font-weight: 100;
+      text-align: center; }
+    main .inscribirseContenido .dropdown .botonDesplegable:active {
+      border-color: green; }
+      main .inscribirseContenido .dropdown .botonDesplegable:active .ubicacionNombre {
+        color: green; }
+    main .inscribirseContenido .dropdown #dropdownHospital {
+      background-image: url("../../../assets/images/inscribirse/hospital.jpeg"); }
+    main .inscribirseContenido .dropdown #dropdownSanMartin {
+      background-image: url("../../../assets/images/inscribirse/sanMartinDark.jpg"); }
+    main .inscribirseContenido .dropdown #dropdownBujan {
+      background-image: url("../../../assets/images/inscribirse/bujandark.jpg"); }
+    main .inscribirseContenido .dropdown .dropdown-menu {
+      width: 20em;
+      height: 45em;
+      margin-left: 0.4em;
+      padding-left: 1em;
+      padding-right: 1em;
+      border: 5px solid #000000;
+      border-radius: 31px 31px 31px 31px; }
+      main .inscribirseContenido .dropdown .dropdown-menu p {
+        font-size: 25px;
+        text-decoration: underline; }
+      main .inscribirseContenido .dropdown .dropdown-menu .ubicacionGoogleMapa {
+        border: 5px solid #6e6e6e; }
+      main .inscribirseContenido .dropdown .dropdown-menu form {
+        text-align: left; }
+      main .inscribirseContenido .dropdown .dropdown-menu select {
+        margin-top: 1em;
+        margin-bottom: 1em; }
+      main .inscribirseContenido .dropdown .dropdown-menu button {
+        margin-top: 1em; }
+
+main [data-aos] {
+  pointer-events: none; }
+
+main .aos-animate {
+  pointer-events: auto; }
+
+main .aos-init[data-aos][data-aos].aos-animate {
+  transform: unset; }
 
 .contactoContenido .logoFlexContainer p {
   display: flex;

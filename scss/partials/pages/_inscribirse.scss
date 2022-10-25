@@ -1,5 +1,8 @@
 main{
     .inscribirseContenido{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         p{
             font-size: 24px;
             a{
@@ -9,30 +12,53 @@ main{
         .dropdown{
             display: flex;
             justify-content: center;
+            align-content: center;
+            margin-bottom: 2em;
             p{
                 text-align: center;
             }
-            #dropdownMenuButton{
+            .botonDesplegable{
                 padding-top: 3em;
                 padding-bottom: 3em;
                 width: 12em;
-                border: 5px solid #000000;
-                border-radius: 31px 31px 31px 31px;
-                @include textoEstilo(28px,$markerTypo,rgb(255, 255, 255),100,center);
-                background-image: url("../../../assets/images/inscribirse/hospital.jpeg");
                 background-size: cover;
+                border: solid #000000;
+                border-radius: 6em;
+                border-width: 10px;
+                box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+                @include textoEstilo(28px,$markerTypo,rgb(255, 255, 255),100,center);
+                
             }
+            .botonDesplegable:active{
+                border-color: green;
+                .ubicacionNombre{
+                    color: green;
+                }
+            }
+            #dropdownHospital{
+                background-image: url("../../../assets/images/inscribirse/hospital.jpeg");
+            }
+            #dropdownSanMartin{
+                background-image: url("../../../assets/images/inscribirse/sanMartinDark.jpg");
+            }
+            #dropdownBujan{
+                background-image: url("../../../assets/images/inscribirse/bujandark.jpg");
+            }
+
             .dropdown-menu{
+                width: 20em;
+                height: 45em;
+                margin-left: 0.4em;
                 padding-left: 1em;
                 padding-right: 1em;
                 border: 5px solid #000000;
                 border-radius: 31px 31px 31px 31px;
-                overflow: hidden;
                 p{
                     @extend .parrafo;
                     font-size: 25px;
                     text-decoration: underline;
                 }
+
                 .ubicacionGoogleMapa{
                     border: 5px solid #6e6e6e;
                 }
@@ -51,4 +77,13 @@ main{
             
         }
     }
+    [data-aos] {
+        pointer-events: none;
+      }
+      .aos-animate {
+        pointer-events: auto;
+      }
+      .aos-init[data-aos][data-aos].aos-animate {
+        transform: unset;
+      }
 }
