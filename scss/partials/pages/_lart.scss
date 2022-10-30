@@ -1,6 +1,7 @@
 @import "../utilities/_variables.scss";
 @import "../utilities/mixins";
 main{
+    
     .lartContenido{
         .subTitulo{
             @include textoEstilo(28px,$markerTypo,black,100,center);

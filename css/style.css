@@ -111,20 +111,39 @@ footer {
     font-weight: 0;
     text-align: center; }
 
-.encabezado {
-  font-size: 30px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 500;
-  text-align: center; }
-
 .banner {
   display: flex;
-  justify-content: center; }
-  .banner img {
-    width: 22em;
-    border: 10px solid #000000;
-    border-radius: 35px 35px 35px 35px; }
+  flex-direction: column; }
+  .banner :first-child {
+    display: flex; }
+    .banner :first-child .siluetaEncabezado {
+      width: 5em; }
+      .banner :first-child .siluetaEncabezado img {
+        width: 4em; }
+    .banner :first-child :first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .banner :first-child :first-child img {
+        width: 4.5em; }
+    .banner :first-child :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .banner :first-child :nth-child(2) h1 {
+        font-size: 30px;
+        font-family: "Permanent Marker";
+        color: black;
+        font-weight: 500;
+        text-align: center; }
+  .banner :nth-child(2) {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center; }
+    .banner :nth-child(2) img {
+      width: 22em;
+      border: 10px solid #000000;
+      border-radius: 35px 35px 35px 35px; }
 
 .pieDePagina {
   overflow-x: hidden;
@@ -138,7 +157,7 @@ footer {
     .pieDePagina .pieDePaginaSilueta img {
       width: 5em; }
 
-.parrafo, main .inscribirseContenido .dropdown .dropdown-menu p, main .inscribirseContenido .dropdown .dropdown-menu form {
+.parrafo, .inscribirse .inscribirseContenido .dropdown .dropdown-menu p, .inscribirse .inscribirseContenido .dropdown .dropdown-menu form {
   font-family: 'Alegreya', serif;
   text-align: center;
   font-size: 20px;
@@ -220,11 +239,11 @@ main .faqContenido {
     color: black;
     font-weight: 100;
     text-align: center; }
-  main .faqContenido .parrafo a, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu p a, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido p a, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu form a, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido form a {
+  main .faqContenido .parrafo a, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu p a, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido p a, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu form a, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido form a {
     font-family: "Permanent Marker";
     color: black;
     text-decoration: none; }
-  main .faqContenido .parrafo a:active, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu p a:active, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido p a:active, main .faqContenido .inscribirseContenido .dropdown .dropdown-menu form a:active, main .inscribirseContenido .dropdown .dropdown-menu .faqContenido form a:active {
+  main .faqContenido .parrafo a:active, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu p a:active, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido p a:active, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu form a:active, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido form a:active {
     text-decoration: none;
     color: green; }
   main .faqContenido :nth-child(11) {
@@ -253,78 +272,83 @@ main .faqContenido {
       border: 10px solid #000000;
       border-radius: 35px 35px 35px 35px; }
 
-main .inscribirseContenido {
-  display: flex;
-  flex-direction: column;
-  align-content: center; }
-  main .inscribirseContenido p {
-    font-size: 24px; }
-    main .inscribirseContenido p a {
-      font-size: 28px;
-      font-family: "Permanent Marker";
-      color: black;
-      font-weight: 100;
-      text-align: center; }
-  main .inscribirseContenido .dropdown {
+.inscribirse {
+  height: 120em; }
+  .inscribirse .inscribirseContenido {
+    height: 120em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    margin-bottom: 2em; }
-    main .inscribirseContenido .dropdown p {
-      text-align: center; }
-    main .inscribirseContenido .dropdown .botonDesplegable {
-      padding-top: 3em;
-      padding-bottom: 3em;
-      width: 12em;
-      background-size: cover;
-      border: solid #000000;
-      border-radius: 6em;
-      border-width: 10px;
-      box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
-      font-size: 28px;
-      font-family: "Permanent Marker";
-      color: white;
-      font-weight: 100;
-      text-align: center; }
-    main .inscribirseContenido .dropdown .botonDesplegable:active {
-      border-color: green; }
-      main .inscribirseContenido .dropdown .botonDesplegable:active .ubicacionNombre {
-        color: green; }
-    main .inscribirseContenido .dropdown #dropdownHospital {
-      background-image: url("../../../assets/images/inscribirse/hospital.jpeg"); }
-    main .inscribirseContenido .dropdown #dropdownSanMartin {
-      background-image: url("../../../assets/images/inscribirse/sanMartinDark.jpg"); }
-    main .inscribirseContenido .dropdown #dropdownBujan {
-      background-image: url("../../../assets/images/inscribirse/bujandark.jpg"); }
-    main .inscribirseContenido .dropdown .dropdown-menu {
-      width: 20em;
-      height: 45em;
-      margin-left: 0.4em;
-      padding-left: 1em;
-      padding-right: 1em;
-      border: 5px solid #000000;
-      border-radius: 31px 31px 31px 31px; }
-      main .inscribirseContenido .dropdown .dropdown-menu p {
-        font-size: 25px;
-        text-decoration: underline; }
-      main .inscribirseContenido .dropdown .dropdown-menu .ubicacionGoogleMapa {
-        border: 5px solid #6e6e6e; }
-      main .inscribirseContenido .dropdown .dropdown-menu form {
-        text-align: left; }
-      main .inscribirseContenido .dropdown .dropdown-menu select {
-        margin-top: 1em;
-        margin-bottom: 1em; }
-      main .inscribirseContenido .dropdown .dropdown-menu button {
-        margin-top: 1em; }
-
-main [data-aos] {
-  pointer-events: none; }
-
-main .aos-animate {
-  pointer-events: auto; }
-
-main .aos-init[data-aos][data-aos].aos-animate {
-  transform: unset; }
+    justify-content: space-between;
+    align-content: center; }
+    .inscribirse .inscribirseContenido p {
+      padding-top: 2em;
+      font-size: 24px; }
+      .inscribirse .inscribirseContenido p a {
+        font-size: 28px;
+        font-family: "Permanent Marker";
+        color: black;
+        font-weight: 100;
+        text-align: center; }
+    .inscribirse .inscribirseContenido .dropdown {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .inscribirse .inscribirseContenido .dropdown p {
+        text-align: center; }
+      .inscribirse .inscribirseContenido .dropdown .botonDesplegable {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        width: 12em;
+        background-size: cover;
+        border: solid #000000;
+        border-radius: 6em;
+        border-width: 10px;
+        box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+        font-size: 28px;
+        font-family: "Permanent Marker";
+        color: white;
+        font-weight: 100;
+        text-align: center; }
+      .inscribirse .inscribirseContenido .dropdown .botonDesplegable:active {
+        border-color: green; }
+        .inscribirse .inscribirseContenido .dropdown .botonDesplegable:active .ubicacionNombre {
+          color: green; }
+      .inscribirse .inscribirseContenido .dropdown #dropdownHospital {
+        background-image: url("../../../assets/images/inscribirse/hospital.jpeg"); }
+      .inscribirse .inscribirseContenido .dropdown #dropdownSanMartin {
+        background-image: url("../../../assets/images/inscribirse/sanMartinDark.jpg"); }
+      .inscribirse .inscribirseContenido .dropdown #dropdownBujan {
+        background-image: url("../../../assets/images/inscribirse/bujandark.jpg"); }
+      .inscribirse .inscribirseContenido .dropdown .dropdown-menu {
+        width: 20em;
+        height: 45em;
+        margin-left: 0.4em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border: 5px solid #000000;
+        border-radius: 31px 31px 31px 31px; }
+        .inscribirse .inscribirseContenido .dropdown .dropdown-menu p {
+          padding-top: 0;
+          font-size: 25px;
+          text-decoration: underline; }
+        .inscribirse .inscribirseContenido .dropdown .dropdown-menu .ubicacionGoogleMapa {
+          border: 5px solid #6e6e6e; }
+        .inscribirse .inscribirseContenido .dropdown .dropdown-menu form {
+          text-align: left; }
+        .inscribirse .inscribirseContenido .dropdown .dropdown-menu select {
+          margin-top: 1em;
+          margin-bottom: 1em; }
+        .inscribirse .inscribirseContenido .dropdown .dropdown-menu button {
+          margin-top: 1em; }
+  .inscribirse [data-aos] {
+    pointer-events: none; }
+  .inscribirse .aos-animate {
+    pointer-events: auto; }
+  .inscribirse .aos-init[data-aos][data-aos].aos-animate {
+    transform: unset; }
+  .inscribirse .pieDePagina {
+    margin-top: 0; }
 
 .contactoContenido .logoFlexContainer p {
   display: flex;
