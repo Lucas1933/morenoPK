@@ -290,6 +290,14 @@ main .faqContenido {
         color: black;
         font-weight: 100;
         text-align: center; }
+    .inscribirse .inscribirseContenido .siluetaInscribirse {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .inscribirse .inscribirseContenido .siluetaInscribirse img {
+        width: 15em; }
+    .inscribirse .inscribirseContenido :nth-child(5) img {
+      width: 10em; }
     .inscribirse .inscribirseContenido .dropdown {
       display: flex;
       justify-content: center;
