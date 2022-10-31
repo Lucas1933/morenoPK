@@ -22,6 +22,26 @@
                 letter-spacing: 1px;
             }
             .botones{
+                .siluetasInicio{
+                    img{
+                        width: 10em;
+                    }
+                }
+                .siluetasInicio:nth-of-type(4){
+                    display: flex;
+                    justify-content: flex-end;
+                    img{
+                        width: 10em;
+                    }
+                }
+                .siluetasInicio:nth-of-type(8){
+                    display: flex;
+                    justify-content: flex-end;
+                    img{
+                        width: 7em;
+                    }
+                }
+
                 .botonContainer{
                     .botonImgContainer{
                         display: flex;

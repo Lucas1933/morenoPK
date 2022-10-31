@@ -182,6 +182,18 @@ footer {
     font-weight: 0;
     text-align: center;
     letter-spacing: 1px; }
+  .bodyInicio main .inicioContenido .botones .siluetasInicio img {
+    width: 10em; }
+  .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(4) {
+    display: flex;
+    justify-content: flex-end; }
+    .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(4) img {
+      width: 10em; }
+  .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(8) {
+    display: flex;
+    justify-content: flex-end; }
+    .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(8) img {
+      width: 7em; }
   .bodyInicio main .inicioContenido .botones .botonContainer .botonImgContainer {
     display: flex;
     justify-content: center;
