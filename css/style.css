@@ -281,15 +281,20 @@ main .faqContenido {
     justify-content: center;
     justify-content: space-between;
     align-content: center; }
-    .inscribirse .inscribirseContenido p {
+    .inscribirse .inscribirseContenido div p {
       padding-top: 2em;
       font-size: 24px; }
-      .inscribirse .inscribirseContenido p a {
+      .inscribirse .inscribirseContenido div p a {
         font-size: 28px;
         font-family: "Permanent Marker";
         color: black;
         font-weight: 100;
         text-align: center; }
+    .inscribirse .inscribirseContenido div .inscribirseSilueta {
+      display: flex;
+      justify-content: center; }
+      .inscribirse .inscribirseContenido div .inscribirseSilueta img {
+        width: 7em; }
     .inscribirse .inscribirseContenido .siluetaInscribirse {
       display: flex;
       flex-direction: column;
@@ -323,11 +328,11 @@ main .faqContenido {
         .inscribirse .inscribirseContenido .dropdown .botonDesplegable:active .ubicacionNombre {
           color: green; }
       .inscribirse .inscribirseContenido .dropdown #dropdownHospital {
-        background-image: url("../../../assets/images/inscribirse/hospital.jpeg"); }
+        background-image: url("../../../assets/images/inscribirse/botones/hospital.jpeg"); }
       .inscribirse .inscribirseContenido .dropdown #dropdownSanMartin {
-        background-image: url("../../../assets/images/inscribirse/sanMartinDark.jpg"); }
+        background-image: url("../../../assets/images/inscribirse/botones/sanMartinDark.jpg"); }
       .inscribirse .inscribirseContenido .dropdown #dropdownBujan {
-        background-image: url("../../../assets/images/inscribirse/bujandark.jpg"); }
+        background-image: url("../../../assets/images/inscribirse/botones/bujandark.jpg"); }
       .inscribirse .inscribirseContenido .dropdown .dropdown-menu {
         width: 20em;
         height: 45em;
@@ -356,7 +361,7 @@ main .faqContenido {
   .inscribirse .aos-init[data-aos][data-aos].aos-animate {
     transform: unset; }
   .inscribirse .pieDePagina {
-    margin-top: 0; }
+    margin-top: 0em; }
 
 .contactoContenido .logoFlexContainer p {
   display: flex;

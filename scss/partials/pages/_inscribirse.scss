@@ -7,12 +7,22 @@
         justify-content: center;
         justify-content: space-between;
         align-content: center;
+            div{
                 p{
                     padding-top: 2em;
                     font-size: 24px;
                     a{
                         @include textoEstilo(28px,$markerTypo,black,100,center);
                     }
+                }
+                .inscribirseSilueta{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 7em;
+                    }
+                }
+
             }
             .siluetaInscribirse{
                 display: flex;
@@ -53,13 +63,13 @@
                     }
                 }
                 #dropdownHospital{
-                    background-image: url("../../../assets/images/inscribirse/hospital.jpeg");
+                    background-image: url("../../../assets/images/inscribirse/botones/hospital.jpeg");
                 }
                 #dropdownSanMartin{
-                    background-image: url("../../../assets/images/inscribirse/sanMartinDark.jpg");
+                    background-image: url("../../../assets/images/inscribirse/botones/sanMartinDark.jpg");
                 }
                 #dropdownBujan{
-                    background-image: url("../../../assets/images/inscribirse/bujandark.jpg");
+                    background-image: url("../../../assets/images/inscribirse/botones/bujandark.jpg");
                 }
 
                 .dropdown-menu{
@@ -107,8 +117,10 @@
         transform: unset;
       }
       .pieDePagina{
-        margin-top: 0;
+        margin-top: 0em;
       }
+
 }
+
 
 
