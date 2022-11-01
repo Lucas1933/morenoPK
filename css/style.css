@@ -273,6 +273,13 @@ main .faqContenido {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
+  .nosotrosContenido .silueta1Parrafo {
+    margin-bottom: 3em; }
+    .nosotrosContenido .silueta1Parrafo .siluetaInscribirse {
+      display: flex;
+      justify-content: center; }
+      .nosotrosContenido .silueta1Parrafo .siluetaInscribirse img {
+        width: 7em; }
   .nosotrosContenido .carousel {
     display: flex;
     justify-content: center; }
