@@ -439,20 +439,31 @@ main .faqContenido {
   .inscribirse .pieDePagina {
     margin-top: 0em; }
 
-.contactoContenido .logoFlexContainer p {
+.contactoContenido {
+  height: 80em;
   display: flex;
-  justify-content: center;
-  font-size: 28px;
-  font-family: "Permanent Marker";
-  color: black;
-  font-weight: 100;
-  text-align: center; }
-
-.contactoContenido .logoFlexContainer a {
-  display: flex;
-  justify-content: center; }
-  .contactoContenido .logoFlexContainer a .redSocialLogo {
-    width: 10em; }
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .contactoContenido .parrafo, .contactoContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu p, .inscribirse .inscribirseContenido .dropdown .dropdown-menu .contactoContenido p, .contactoContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu form, .inscribirse .inscribirseContenido .dropdown .dropdown-menu .contactoContenido form {
+    margin-top: 0em; }
+  .contactoContenido .logoFlexContainer {
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .contactoContenido .logoFlexContainer p {
+      display: flex;
+      justify-content: center;
+      font-size: 28px;
+      font-family: "Permanent Marker";
+      color: black;
+      font-weight: 100;
+      text-align: center; }
+    .contactoContenido .logoFlexContainer a {
+      display: flex;
+      justify-content: center; }
+      .contactoContenido .logoFlexContainer a .redSocialLogo {
+        width: 10em; }
 
 @media (min-width: 992px) {
   header .navbar {
