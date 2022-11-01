@@ -11,6 +11,12 @@
   0% {
     transform: translateX(15em); } }
 
+@keyframes animacionFaq {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 header {
   position: sticky;
   z-index: 10;
@@ -245,12 +251,67 @@ main .lartContenido :nth-child(12) {
 
 main .faqContenido {
   overflow: hidden; }
+  main .faqContenido h2 {
+    margin-top: 2em; }
   main .faqContenido .subTitulo {
     font-size: 28px;
     font-family: "Permanent Marker";
     color: black;
     font-weight: 100;
     text-align: center; }
+  main .faqContenido .siluetaFaq {
+    display: flex;
+    justify-content: center; }
+    main .faqContenido .siluetaFaq img {
+      width: 5em; }
+  main .faqContenido .siluetaFaq:nth-of-type(3) {
+    display: flex;
+    justify-content: center; }
+    main .faqContenido .siluetaFaq:nth-of-type(3) img {
+      width: 4em; }
+  main .faqContenido .siluetaFaq:nth-of-type(4) {
+    display: flex;
+    justify-content: center; }
+    main .faqContenido .siluetaFaq:nth-of-type(4) img {
+      width: 3em; }
+  main .faqContenido .siluetaFaq:nth-of-type(5) {
+    display: flex;
+    justify-content: center; }
+    main .faqContenido .siluetaFaq:nth-of-type(5) img {
+      width: 6em; }
+  main .faqContenido .siluetaFaq:nth-of-type(6) img {
+    width: 7em; }
+  main .faqContenido .siluetaFaq:nth-of-type(7) img {
+    width: 10em; }
+  main .faqContenido .animacionContainer {
+    display: flex; }
+    main .faqContenido .animacionContainer .secuenciaContainer {
+      display: flex;
+      flex-direction: column; }
+    main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(2) img {
+      opacity: 0;
+      animation-name: animacionFaq;
+      animation-delay: 1s;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards; }
+    main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(3) {
+      padding-top: 2em; }
+      main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(3) img {
+        opacity: 0;
+        animation-name: animacionFaq;
+        animation-delay: 2s;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards; }
+    main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(4) {
+      padding-top: 4em; }
+      main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(4) img {
+        opacity: 0;
+        animation-name: animacionFaq;
+        animation-delay: 3s;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards; }
+    main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(5) {
+      justify-content: flex-end; }
   main .faqContenido .parrafo a, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu p a, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido p a, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu form a, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido form a {
     font-family: "Permanent Marker";
     color: black;
@@ -258,14 +319,6 @@ main .faqContenido {
   main .faqContenido .parrafo a:active, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu p a:active, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido p a:active, main .faqContenido .inscribirse .inscribirseContenido .dropdown .dropdown-menu form a:active, .inscribirse .inscribirseContenido .dropdown .dropdown-menu main .faqContenido form a:active {
     text-decoration: none;
     color: green; }
-  main .faqContenido :nth-child(11) {
-    display: block;
-    text-align: center; }
-  main .faqContenido :nth-child(13) {
-    display: block;
-    text-align: center; }
-  main .faqContenido :last-child {
-    text-align: center; }
 
 .nosotrosContenido {
   overflow: hidden;

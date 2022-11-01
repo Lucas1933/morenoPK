@@ -3,31 +3,108 @@
 main{
     .faqContenido{
         overflow: hidden;
+        h2{
+            margin-top: 2em;
+        }
         .subTitulo{
             @include textoEstilo(28px,$markerTypo,black,100,center);
         }
+        .siluetaFaq{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 5em;
+            }
+        }
+        .siluetaFaq:nth-of-type(3){
+            display: flex;
+            justify-content: center;
+            img{
+                width: 4em;
+            }
+        }
+        .siluetaFaq:nth-of-type(4){
+            display: flex;
+            justify-content: center;
+            img{
+                width: 3em;
+            }
+        }
+        .siluetaFaq:nth-of-type(5){
+            display: flex;
+            justify-content: center;
+            img{
+                width: 6em;
+            }
+        }
+        .siluetaFaq:nth-of-type(6){
+            img{
+                width: 7em;
+            }
+        }
+        .siluetaFaq:nth-of-type(7){
+            img{
+                width: 10em;
+            }
+        }
+
+        .animacionContainer{
+            display: flex;
+            .secuenciaContainer{
+                display: flex;
+                flex-direction: column;
+            }
+
+           .secuenciaContainer:nth-of-type(2){
+                img{
+                    opacity: 0;
+                    animation-name: animacionFaq;
+                    animation-delay: 1s;
+                    animation-duration: 1.5s;
+                    animation-fill-mode: forwards;
+                }
+                
+            }
+            .secuenciaContainer:nth-of-type(3){
+                padding-top: 2em;
+                img{
+                    opacity: 0;
+                    animation-name: animacionFaq;
+                    animation-delay: 2s;
+                    animation-duration: 1.5s;
+                    animation-fill-mode: forwards; 
+                }
+                
+            }
+            .secuenciaContainer:nth-of-type(4){
+                padding-top: 4em;
+                img{
+                    opacity: 0;
+                    animation-name: animacionFaq;
+                    animation-delay: 3s;
+                    animation-duration: 1.5s;
+                    animation-fill-mode: forwards;
+                        
+                }
+                
+            } 
+            .secuenciaContainer:nth-of-type(5){
+                justify-content: flex-end;
+            }
+        }
         .parrafo{
-            a{
-                font-family: $markerTypo;
-                color: black;
-                text-decoration: none;
+                a{
+                    font-family: $markerTypo;
+                    color: black;
+                    text-decoration: none;
+    
+                }
+                a:active{
+                    text-decoration: none;
+                    color: green;
+                }
             }
-            a:active{
-                text-decoration: none;
-                color: green;
-            }
-        }
-        :nth-child(11){
-            display: block;
-            text-align: center;
-        }
-        :nth-child(13){
-            display: block;
-            text-align: center;
-        }
-        :last-child{
-            text-align: center;
-        }
+
     }
 
 
