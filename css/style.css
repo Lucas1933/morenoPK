@@ -57,7 +57,7 @@ body {
 footer {
   margin-top: 10em;
   border-style: solid;
-  border-top: 3;
+  border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
@@ -268,7 +268,11 @@ main .faqContenido {
     text-align: center; }
 
 .nosotrosContenido {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
   .nosotrosContenido .carousel {
     display: flex;
     justify-content: center; }
