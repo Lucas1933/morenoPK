@@ -3,6 +3,9 @@
 main{
     
     .lartContenido{
+        h2{
+            margin-top: 2em;
+        }
         .subTitulo{
             @include textoEstilo(28px,$markerTypo,black,100,center);
         }
