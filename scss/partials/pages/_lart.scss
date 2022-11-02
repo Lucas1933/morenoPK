@@ -13,9 +13,17 @@ main{
         .subTitulo{
             @include textoEstilo(28px,$markerTypo,black,100,center);
         }
-        iframe{
-            height: 30em;
+        .videoLart{
+            display: flex;
+            justify-content: center;
+            iframe{
+                height: 20em;
+                width: 23em;
+                border: 10px solid #000000;
+                border-radius: 35px 35px 35px 35px;
+            }
         }
+
         :nth-child(12){
             display: block;
             text-align: center;
