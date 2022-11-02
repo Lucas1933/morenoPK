@@ -235,6 +235,10 @@ footer {
     position: relative;
     z-index: 2; }
 
+main .lartContenido img {
+  border: 10px solid #000000;
+  border-radius: 35px 35px 35px 35px; }
+
 main .lartContenido h2 {
   margin-top: 2em; }
 
