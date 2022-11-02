@@ -447,7 +447,7 @@ main .faqContenido {
     margin-top: 0em; }
 
 .contactoContenido {
-  height: 80em;
+  height: 120em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
