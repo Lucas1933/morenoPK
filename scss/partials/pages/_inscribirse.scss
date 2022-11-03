@@ -36,15 +36,17 @@
                 img{
                     width: 10em;
                 }
-             }   
-            .dropdown{
+             }
+   
+            .botonAformularioContainer{
                 display: flex;
                 justify-content: center;
                 align-content: center;
                 p{
+                    padding-top: 0;
                     text-align: center;
                 }
-                .botonDesplegable{
+                .boton{
                     padding-top: 3em;
                     padding-bottom: 3em;
                     width: 12em;
@@ -56,51 +58,55 @@
                     @include textoEstilo(28px,$markerTypo,rgb(255, 255, 255),100,center);
                     
                 }
-                .botonDesplegable:active{
+                .boton:active{
                     border-color: green;
                     .ubicacionNombre{
                         color: green;
                     }
                 }
-                #dropdownHospital{
+                #botonHospital{
                     background-image: url("../../../assets/images/inscribirse/botones/hospital.jpeg");
                 }
-                #dropdownSanMartin{
+                #botonSanMartin{
                     background-image: url("../../../assets/images/inscribirse/botones/sanMartinDark.jpg");
                 }
-                #dropdownBujan{
+                #botonBujan{
                     background-image: url("../../../assets/images/inscribirse/botones/bujandark.jpg");
                 }
 
-                .dropdown-menu{
+                .modal-content{
                     width: 20em;
-                    height: 45em;
+                    height: 48em;
                     margin-left: 0.4em;
-                    padding-left: 1em;
-                    padding-right: 1em;
                     border: 5px solid #000000;
                     border-radius: 31px 31px 31px 31px;
-                    p{
-                        padding-top: 0;
-                        @extend .parrafo;
-                        font-size: 25px;
-                        text-decoration: underline;
-                    }
-
-                    .ubicacionGoogleMapa{
-                        border: 5px solid #6e6e6e;
-                    }
-                    form{
-                        @extend .parrafo;
-                        text-align: left;
-                    }
-                    select{
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                    }
                     button{
-                        margin-top: 1em;
+                        border: none;
                     }
+                    .modal-body{
+                        padding-top: 0;
+                        p{
+                            padding-top: 0;
+                            @extend .parrafo;
+                            font-size: 25px;
+                        }
+    
+                        .ubicacionGoogleMapa{
+                            border: 5px solid #6e6e6e;
+                        }
+                        form{
+                            @extend .parrafo;
+                            text-align: left;
+                        }
+                        select{
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                        }
+                        button{
+                            margin-top: 1em;
+                        }
+                    }
+                    
                 }
                 
             }

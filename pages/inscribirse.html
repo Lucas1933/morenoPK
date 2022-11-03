@@ -88,183 +88,207 @@
                 </p>
                 <div class="inscribirseSilueta"><img src="../assets/images/inscribirse/siluetas/siluetita_5.png" alt=""></div>
             </div> 
-            <!-- DROPDOWN HOSPITAL------------------------------------------ -->
-            <div class="dropdown dropup" data-aos="zoom-in" data-aos-duration="400">
-                <button class="btn btn-secondary  botonDesplegable" type="button" id="dropdownHospital" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="ubicacionNombre">Hospital Viejo</span>
-                </button>
-                <div class="dropdown-menu" class="fixed-bottom" aria-labelledby="dropdownMenuButton" data-bs-display="static">
-                    <p>Av.Libertador 4569</p>
-                    <iframe class="ubicacionGoogleMapa"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.973935922397!2d-58.79247407704282!3d-34.64855336760105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1662479154283!5m2!1ses!2sar"
-                    style="border:1;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <form>
-                        <div class="form-group">
-                          <label for="nombreApellido">Nombre y apellido</label>
-                          <input type="text" class="form-control" id="inputNombreApellido" >
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email</label>
-                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-check">
-                            <label for="">Edad</label>
-                            <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
-                            <label class="form-check-label" for="edad1012">
-                              10-12
-                            </label>
+  <!--HOSPITAL------------------------------------------ -->
+            <div class="botonAformularioContainer">
+              <button id="botonHospital" type="button" class="btn btn-primary boton" data-toggle="modal" data-target="#formularioModalHospital">
+                <span class="ubicacionNombre">Hospital Viejo</span>
+              </button>
+              <div class="modal fade" id="formularioModalHospital" tabindex="-1" role="dialog"   aria-labelledby="formularioModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <button type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="d-flex justify-content-end">&times;</span>
+                      </button>
+                    <div class="modal-body">
+                      <p>Av. del libertador 710</p>
+                      <iframe class="ubicacionGoogleMapa"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.973935922397!2d-58.79247407704282!3d-34.64855336760105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc944e7191b0dd%3A0x28bfcff5d99bcc51!2sHospital%20Mariano%20y%20Luciano%20de%20la%20Vega!5e0!3m2!1ses!2sar!4v1662479154283!5m2!1ses!2sar"
+                      style="border:1;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <form>
+                          <div class="form-group">
+                            <label for="nombreApellido">Nombre y apellido</label>
+                            <input type="text" class="form-control" id="inputNombreApellido" >
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
-                            <label class="form-check-label" for="edad1315">
-                              13-15
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
-                            <label class="form-check-label" for="edad1618">
-                              16-18
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
-                            <label class="form-check-label" for="edad18">
-                              18+
-                            </label>
-                          </div>
-                          <select class="custom-select">
-                            <option selected>Seleccionar horario</option>
-                            <option value="1">14hs a 16hs</option>
-                            <option value="2">18hs a 20hs</option>
-                          </select>
-                        <button type="submit" class="btn btn-dark">Enviar</button>
-                      </form>
+                              <label for="">Edad</label>
+                              <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
+                              <label class="form-check-label" for="edad1012">
+                                10-12
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                              <label class="form-check-label" for="edad1315">
+                                13-15
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                              <label class="form-check-label" for="edad1618">
+                                16-18
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                              <label class="form-check-label" for="edad18">
+                                18+
+                              </label>
+                            </div>
+                            <select class="custom-select">
+                              <option selected>Seleccionar horario</option>
+                              <option value="1">14hs a 16hs</option>
+                              <option value="2">18hs a 20hs</option>
+                            </select>
+                          <button type="submit" class="btn btn-dark">Enviar</button>
+                        </form>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- DROPDOWN HOSPITAL------------------------------------------ -->
+            </div>
+  <!-- HOSPITAL------------------------------------------ -->
               <div class="siluetaInscribirse"><img src="../assets/images/inscribirse/siluetas/siluetita_3.png" alt=""></div>
-              <!-- DROPDOWN SAN MARTIN------------------------------------------ -->
-              <div class="dropdown dropup" data-aos="zoom-in" data-aos-duration="400">
-                <button class="btn btn-secondary  botonDesplegable" type="button" id="dropdownSanMartin"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <!-- SAN MARTIN------------------------------------------ -->
+              <div class="botonAformularioContainer">
+                <button id="botonSanMartin" type="button" class="btn btn-primary boton" data-toggle="modal" data-target="#formularioModalSanMartin">
                   <span class="ubicacionNombre">Plaza San Martin</span>
                 </button>
-                <div class="dropdown-menu" class="fixed-bottom" aria-labelledby="dropdownMenuButton" data-bs-display="static">
-                    <p>Bartolome Mitre 3050</p>
-                    <iframe class="ubicacionGoogleMapa"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.2257749300707!2d-58.790748484221396!3d-34.64900066923659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9551e8ccb33d%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1662479269582!5m2!1ses!2sar"
-                    style="border:1;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <form>
-                        <div class="form-group">
-                          <label for="nombreApellido">Nombre y apellido</label>
-                          <input type="text" class="form-control" id="inputNombreApellido" >
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email</label>
-                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-check">
-                            <label for="">Edad</label>
-                            <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
-                            <label class="form-check-label" for="edad1012">
-                              10-12
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
-                            <label class="form-check-label" for="edad1315">
-                              13-15
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
-                            <label class="form-check-label" for="edad1618">
-                              16-18
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
-                            <label class="form-check-label" for="edad18">
-                              18+
-                            </label>
-                          </div>
-                          <select class="custom-select">
-                            <option selected>Seleccionar horario</option>
-                            <option value="1">14hs a 16hs</option>
-                            <option value="2">18hs a 20hs</option>
-                          </select>
-                        <button type="submit" class="btn btn-dark">Enviar</button>
-                      </form>
+                <div class="modal fade" id="formularioModalSanMartin" tabindex="-1" role="dialog"   aria-labelledby="formularioModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="d-flex justify-content-end">&times;</span>
+                        </button>
+                      <div class="modal-body">
+                        <p>Av.Bartolomé Mitre 2898</p> 
+                        <iframe class="ubicacionGoogleMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6564.332071017577!2d-58.792957775466576!3d-34.65050955198455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1667477611124!5m2!1ses!2sar" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <form>
+                            <div class="form-group">
+                              <label for="nombreApellido">Nombre y apellido</label>
+                              <input type="text" class="form-control" id="inputNombreApellido" >
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-check">
+                                <label for="">Edad</label>
+                                <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
+                                <label class="form-check-label" for="edad1012">
+                                  10-12
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                                <label class="form-check-label" for="edad1315">
+                                  13-15
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                                <label class="form-check-label" for="edad1618">
+                                  16-18
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                                <label class="form-check-label" for="edad18">
+                                  18+
+                                </label>
+                              </div>
+                              <select class="custom-select">
+                                <option selected>Seleccionar horario</option>
+                                <option value="1">14hs a 16hs</option>
+                                <option value="2">18hs a 20hs</option>
+                              </select>
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- DROPDOWN SAN MARTIN------------------------------------------ -->
+  <!-- SAN MARTIN------------------------------------------ -->
               <div class="siluetaInscribirse"><img src="../assets/images/inscribirse/siluetas/siluetita_4.png" alt=""></div>
-              <!-- DROPDOWN BUJAN------------------------------------------ -->
-              <div class="dropdown dropup" data-aos="zoom-in" data-aos-duration="400">
-                <button class="btn btn-secondary  botonDesplegable" type="button" id="dropdownBujan"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="ubicacionNombre">Plaza Bujan</span>
+  <!-- BUJAN------------------------------------------ -->
+              <div class="botonAformularioContainer">
+                <button id="botonBujan" type="button" class="btn btn-primary boton" data-toggle="modal" data-target="#formularioModalBujan">
+                  <span class="ubicacionNombre">Plaza Bujan</span>
                 </button>
-              <div class="dropdown-menu" class="fixed-bottom" aria-labelledby="dropdownMenuButton" data-bs-display="static">
-                <p>Bartolome Mitre 5162</p> 
-                <iframe class="ubicacionGoogleMapa"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.216152155672!2d-58.7717747!3d-34.6533382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb57d7ed6436bb3!2sPlaza%20Bujan!5e0!3m2!1ses!2sar!4v1662478965914!5m2!1ses!2sar"
-                style="border:1;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <form>
-                    <div class="form-group">
-                      <label for="nombreApellido">Nombre y apellido</label>
-                      <input type="text" class="form-control" id="inputNombreApellido" >
+                <div class="modal fade" id="formularioModalBujan" tabindex="-1" role="dialog"   aria-labelledby="formularioModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="d-flex justify-content-end">&times;</span>
+                        </button>
+                      <div class="modal-body">
+                        <p>Justo Daract 1541</p> 
+                        <iframe class="ubicacionGoogleMapa"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.216152155672!2d-58.7717747!3d-34.6533382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdb57d7ed6436bb3!2sPlaza%20Bujan!5e0!3m2!1ses!2sar!4v1662478965914!5m2!1ses!2sar"
+                        style="border:1;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <form>
+                            <div class="form-group">
+                              <label for="nombreApellido">Nombre y apellido</label>
+                              <input type="text" class="form-control" id="inputNombreApellido" >
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-check">
+                                <label for="">Edad</label>
+                                <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
+                                <label class="form-check-label" for="edad1012">
+                                  10-12
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                                <label class="form-check-label" for="edad1315">
+                                  13-15
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                                <label class="form-check-label" for="edad1618">
+                                  16-18
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                                <label class="form-check-label" for="edad18">
+                                  18+
+                                </label>
+                              </div>
+                              <select class="custom-select">
+                                <option selected>Seleccionar horario</option>
+                                <option value="1">14hs a 16hs</option>
+                                <option value="2">18hs a 20hs</option>
+                              </select>
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                          </form>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-check">
-                        <label for="">Edad</label>
-                        <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
-                        <label class="form-check-label" for="edad1012">
-                          10-12
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
-                        <label class="form-check-label" for="edad1315">
-                          13-15
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
-                        <label class="form-check-label" for="edad1618">
-                          16-18
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
-                        <label class="form-check-label" for="edad18">
-                          18+
-                        </label>
-                      </div>
-                      <select class="custom-select">
-                        <option selected>Seleccionar horario</option>
-                        <option value="1">14hs a 16hs</option>
-                        <option value="2">18hs a 20hs</option>
-                      </select>
-                    <button type="submit" class="btn btn-dark">Enviar</button>
-                  </form>
+                  </div>
                 </div>
-                <!-- DROPDOWN BUJAN------------------------------------------ -->
-            </div>
+              </div>
+  <!-- BUJAN------------------------------------------ -->
+        </div>
     </main>
+
     <div class="pieDePagina">
       <div data-aos="fade-right" data-aos-duration="1100">Être et durer</div> 
       <div class="pieDePaginaSilueta" >
           <img src="../assets/images/logos/siluetaParkour.png" alt="" data-aos="zoom-in" data-aos-duration="1100">
       </div>
       <div data-aos="fade-left" data-aos-duration="1100">être fort pour être utile</div>
-  </div>
-            
-  
+    </div>
 
     <footer>
       <div><img src="../assets/images/decoracionFooter.jpg" alt=""></div>
@@ -306,15 +330,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
