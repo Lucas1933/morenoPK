@@ -511,8 +511,18 @@ main .faqContenido {
 
 @media (min-width: 992px) {
   footer {
+    margin-top: 0;
     display: flex;
-    flex-direction: row; }
+    flex-direction: column; }
+    footer .decoradoFooter {
+      width: inherit;
+      height: 17em;
+      background-color: white;
+      background-image: url("../../../../assets/images/decoracionFooter.jpg");
+      background-size: cover;
+      background-size: 40em 20em; }
+      footer .decoradoFooter img {
+        display: none; }
     footer .seguinosContainer {
       display: flex;
       flex-direction: column; }
