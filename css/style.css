@@ -549,9 +549,126 @@ main .faqContenido {
           width: 10em !important; } }
 
 @media (min-width: 992px) {
-  .bodyInicio {
-    background-size: cover;
-    background-position: 0em; } }
+  .bodyInicio main .inicioContenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: hidden;
+    background-image: url("../../../../assets/images/inicioDesktop/inscribirse.jpeg");
+    background-repeat: no-repeat;
+    background-size: 85em;
+    background-position-y: -16em;
+    background-image: url("../../../../assets/images/inicioDesktop/inicioDesktopBG.jpg"); }
+    .bodyInicio main .inicioContenido #carouselInicio {
+      display: none; }
+    .bodyInicio main .inicioContenido .parrafoInicio {
+      padding-top: 18em;
+      background: white;
+      background: linear-gradient(0deg, white 0%, white 34%, rgba(255, 255, 255, 0) 59%);
+      font-size: 28px;
+      font-family: "Permanent Marker";
+      color: black;
+      font-weight: 0;
+      text-align: center;
+      letter-spacing: 1px; }
+    .bodyInicio main .inicioContenido .botones {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "speeed faq ins art tic_tac" "cat_oneHand nos con gal cat"; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(1) {
+        grid-area: faq; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(1):hover {
+        z-index: 2;
+        transform: scale(1.1); }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(3) {
+        grid-area: ins; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(3):hover {
+        z-index: 2;
+        transform: scale(1.1); }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(5) {
+        grid-area: art; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(5):hover {
+        z-index: 2;
+        transform: scale(1.1); }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(7) {
+        grid-area: con; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(7):hover {
+        z-index: 2;
+        transform: scale(1.1); }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(9) {
+        grid-area: nos; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(9):hover {
+        z-index: 2;
+        transform: scale(1.1); }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(11) {
+        grid-area: gal; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:nth-of-type(11):hover {
+        z-index: 2;
+        transform: scale(1.1); }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(2) {
+        display: none; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(4) {
+        grid-area: tic_tac; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(6) {
+        grid-area: speeed; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(8) {
+        grid-area: cat; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(10) {
+        grid-area: cat_oneHand; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio {
+        width: 11em; }
+        .bodyInicio main .inicioContenido .botones .siluetasInicio img {
+          width: 10em; }
+      .bodyInicio main .inicioContenido .botones #boton_faq {
+        grid-area: boton_faq; }
+      .bodyInicio main .inicioContenido .botones #silueta_uno {
+        grid-area: silueta_uno; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(4) {
+        display: flex;
+        justify-content: flex-end; }
+        .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(4) img {
+          width: 10em; }
+      .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(8) {
+        display: flex;
+        justify-content: flex-end; }
+        .bodyInicio main .inicioContenido .botones .siluetasInicio:nth-of-type(8) img {
+          width: 7em; }
+      .bodyInicio main .inicioContenido .botones .botonContainer {
+        width: 20.5em; }
+        .bodyInicio main .inicioContenido .botones .botonContainer .botonImgContainer {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: -1; }
+          .bodyInicio main .inicioContenido .botones .botonContainer .botonImgContainer .btnImg {
+            width: 20em;
+            border-style: solid;
+            border-radius: 6em;
+            border-width: 10px;
+            box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+            background-color: rgba(255, 255, 255, 0.303); }
+        .bodyInicio main .inicioContenido .botones .botonContainer .btnText a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-decoration: none;
+          padding-top: 3em;
+          padding-bottom: 4em;
+          font-size: 28px;
+          font-family: "Permanent Marker";
+          color: black;
+          font-weight: 0;
+          text-align: center; }
+        .bodyInicio main .inicioContenido .botones .botonContainer .btnText a:active {
+          color: green; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer {
+        z-index: 1; }
+        .bodyInicio main .inicioContenido .botones .botonContainer:active .botonImgContainer .btnImg {
+          border-color: green;
+          box-shadow: inset 0px 1px 0px #000000, inset 0px 6px 0px #000000; }
+      .bodyInicio main .inicioContenido .botones .botonContainer:active .btnText a {
+        position: relative;
+        z-index: 2; } }
 
 @media (min-width: 992px) {
   main .galeriaContainer {

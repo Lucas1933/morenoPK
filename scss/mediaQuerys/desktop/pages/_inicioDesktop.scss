@@ -1,6 +1,170 @@
 @media  (min-width: 992px){
     .bodyInicio{
-        background-size: cover;
-        background-position: 0em;
+        main{
+            .inicioContenido{
+                display: grid;
+                grid-template-columns: 1fr;
+                overflow-y: hidden;
+                background-image: url("../../../../assets/images/inicioDesktop/inscribirse.jpeg");
+                background-repeat: no-repeat;
+                background-size: 85em;
+                background-position-y: -16em;
+                background-image: url("../../../../assets/images/inicioDesktop/inicioDesktopBG.jpg");
+                #carouselInicio{
+                    display: none;
+                }
+                .parrafoInicio{
+                    padding-top: 18em; 
+                    background: rgb(255,255,255);
+                    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 59%);
+                    @include textoEstilo(28px,$markerTypo,black,0,center);
+                    letter-spacing: 1px;
+                }
+                .botones{
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-areas: "speeed faq ins art tic_tac"
+                                         "cat_oneHand nos con gal cat";
+                    .botonContainer:nth-of-type(1){
+                        grid-area: faq;
+                    }
+                    .botonContainer:nth-of-type(1):hover{
+                        z-index: 2;
+                       transform: scale(1.1);
+                    }
+
+                    .botonContainer:nth-of-type(3){
+                        grid-area:  ins;
+                    }
+                    .botonContainer:nth-of-type(3):hover{
+                        z-index: 2;
+                       transform: scale(1.1);
+                    }
+                    .botonContainer:nth-of-type(5){
+                        grid-area: art;
+                    }
+                    .botonContainer:nth-of-type(5):hover{
+                        z-index: 2;
+                        transform: scale(1.1);
+                    }
+                    .botonContainer:nth-of-type(7){
+                        grid-area: con;
+                    }
+                    .botonContainer:nth-of-type(7):hover{
+                        z-index: 2;
+                        transform: scale(1.1);
+                    }
+                    .botonContainer:nth-of-type(9){
+                        grid-area: nos;
+                    }
+                    .botonContainer:nth-of-type(9):hover{
+                        z-index: 2;
+                        transform: scale(1.1);
+                    }
+                    .botonContainer:nth-of-type(11){
+                        grid-area: gal;
+                    }
+                    .botonContainer:nth-of-type(11):hover{
+                        z-index: 2;
+                        transform: scale(1.1);
+                       
+                    }
+                    .siluetasInicio:nth-of-type(2){
+                        display: none;
+                     }
+                    .siluetasInicio:nth-of-type(4){
+                       grid-area: tic_tac;
+                    }
+                    .siluetasInicio:nth-of-type(6){
+                        grid-area: speeed;
+                     }
+                    .siluetasInicio:nth-of-type(8){
+                        grid-area: cat;
+                     }
+                     .siluetasInicio:nth-of-type(10){
+                        grid-area: cat_oneHand;
+                     }
+
+
+                    .siluetasInicio{
+                        width: 11em;
+                        img{
+                            width: 10em;
+                        }
+                    }
+                    #boton_faq{
+                        grid-area: boton_faq;
+                    }
+                    #silueta_uno{
+                        grid-area: silueta_uno;
+                    }
+                    .siluetasInicio:nth-of-type(4){
+                        display: flex;
+                        justify-content: flex-end;
+                        img{
+                            width: 10em;
+                        }
+                    }
+                    .siluetasInicio:nth-of-type(8){
+                        display: flex;
+                        justify-content: flex-end;
+                        img{
+                            width: 7em;
+                        }
+                    }
+    
+                    .botonContainer{
+                        width: 20.5em;
+                        .botonImgContainer{
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            z-index: -1;
+                                .btnImg{
+                                    width: 20em;
+                                    border-style: solid;
+                                    border-radius: 6em;
+                                    border-width: 10px;
+                                    box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+                                    background-color: rgba(255, 255, 255, 0.303);
+                                    }
+                        }
+                        .btnText{
+                            a{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-decoration: none;
+                                padding-top: 3em;
+                                padding-bottom: 4em;
+                                @include textoEstilo(28px,$markerTypo,black,0,center);
+                            }
+                            a:active{
+                                color: green;
+                            }
+                        }
+    
+                    }
+                    .botonContainer:active{
+                        
+                        .botonImgContainer{
+                            z-index: 1;
+                            .btnImg{
+                                border-color: green;
+                                box-shadow: inset 0px 1px 0px #000000, inset 0px 6px 0px #000000;
+                            }
+                        }
+                        .btnText{
+                            a{
+                                position: relative;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
