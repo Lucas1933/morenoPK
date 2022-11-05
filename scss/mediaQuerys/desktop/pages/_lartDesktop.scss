@@ -1,0 +1,40 @@
+@media  (min-width: 992px){
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .lartContenido{
+        width: 60em !important;
+        img:nth-of-type(1){
+            width: 15em;
+        }
+        img{
+            border: 10px solid #000000;
+            border-radius: 35px 35px 35px 35px;
+        }
+        h2{
+            margin-top: 2em;
+        }
+        .subTitulo{
+            @include textoEstilo(28px,$markerTypo,black,100,center);
+        }
+        .videoLart{
+            display: flex;
+            justify-content: center;
+            iframe{
+                height: 20em;
+                width: 23em;
+                border: 10px solid #000000;
+                border-radius: 35px 35px 35px 35px;
+            }
+        }
+
+        :nth-child(12){
+            display: block;
+            text-align: center;
+        }
+    }
+ }
+}

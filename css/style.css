@@ -572,6 +572,43 @@ main .faqContenido {
           width: 8em !important; } }
 
 @media (min-width: 992px) {
+  .banner {
+    display: flex;
+    flex-direction: column; }
+    .banner :first-child {
+      display: flex;
+      justify-content: center; }
+      .banner :first-child .siluetaEncabezado {
+        width: 5em; }
+        .banner :first-child .siluetaEncabezado img {
+          width: 4em; }
+      .banner :first-child :first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .banner :first-child :first-child img {
+          width: 4.5em; }
+      .banner :first-child :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30em !important; }
+        .banner :first-child :nth-child(2) h1 {
+          font-size: 30px;
+          font-family: "Permanent Marker";
+          color: black;
+          font-weight: 500;
+          text-align: center; }
+    .banner :nth-child(2) {
+      padding-top: 1em;
+      display: flex;
+      justify-content: center; }
+      .banner :nth-child(2) img {
+        width: 22em;
+        border: 10px solid #000000;
+        border-radius: 35px 35px 35px 35px; } }
+
+@media (min-width: 992px) {
   .bodyInicio main .inicioContenido {
     display: grid;
     grid-template-columns: 1fr;
@@ -712,6 +749,39 @@ main .faqContenido {
     display: flex;
     flex-direction: column;
     align-items: center; } }
+
+@media (min-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .lartContenido {
+      width: 60em !important; }
+      main .lartContenido img:nth-of-type(1) {
+        width: 15em; }
+      main .lartContenido img {
+        border: 10px solid #000000;
+        border-radius: 35px 35px 35px 35px; }
+      main .lartContenido h2 {
+        margin-top: 2em; }
+      main .lartContenido .subTitulo {
+        font-size: 28px;
+        font-family: "Permanent Marker";
+        color: black;
+        font-weight: 100;
+        text-align: center; }
+      main .lartContenido .videoLart {
+        display: flex;
+        justify-content: center; }
+        main .lartContenido .videoLart iframe {
+          height: 20em;
+          width: 23em;
+          border: 10px solid #000000;
+          border-radius: 35px 35px 35px 35px; }
+      main .lartContenido :nth-child(12) {
+        display: block;
+        text-align: center; } }
 
 @media (min-width: 768px) {
   footer .footerLogoContainer img {
