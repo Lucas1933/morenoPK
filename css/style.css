@@ -335,7 +335,7 @@ main .faqContenido {
 
 .nosotrosContenido {
   overflow: hidden;
-  height: 110em;
+  height: 130em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
@@ -366,9 +366,9 @@ main .faqContenido {
       border-radius: 35px 35px 35px 35px; }
 
 .inscribirse {
-  height: 150em; }
+  height: 170em; }
   .inscribirse .inscribirseContenido {
-    height: 150em;
+    height: 170em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -573,6 +573,8 @@ main .faqContenido {
 
 @media (min-width: 992px) {
   .banner {
+    background-color: white;
+    width: 60em;
     display: flex;
     flex-direction: column; }
     .banner :first-child {
@@ -604,7 +606,7 @@ main .faqContenido {
       display: flex;
       justify-content: center; }
       .banner :nth-child(2) img {
-        width: 22em;
+        width: 40em;
         border: 10px solid #000000;
         border-radius: 35px 35px 35px 35px; } }
 
@@ -736,19 +738,62 @@ main .faqContenido {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 992px) {
-  main .ubicacionesContainer {
-    display: flex;
-    flex-direction: row; }
-    main .ubicacionesContainer .dropdown-show .btn {
-      height: 20em; }
-    main .ubicacionesContainer .dropdown-show .dropdown-menu {
-      width: 30em; } }
-
-@media (min-width: 992px) {
-  .nosotrosMainContainer .nosotrosFlexContainer {
+  .bodyInscribirse {
+    background-color: #000000;
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+    .bodyInscribirse main {
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .bodyInscribirse main .inscribirseContenido {
+        width: 60em;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .bodyInscribirse main .inscribirseContenido div {
+          margin-bottom: 0; }
+        .bodyInscribirse main .inscribirseContenido .ubicacionesContainer {
+          display: flex;
+          flex-direction: row; }
+          .bodyInscribirse main .inscribirseContenido .ubicacionesContainer .dropdown-show .btn {
+            height: 20em; }
+          .bodyInscribirse main .inscribirseContenido .ubicacionesContainer .dropdown-show .dropdown-menu {
+            width: 30em; }
+      .bodyInscribirse main .pieDePagina {
+        background-color: white; }
+    .bodyInscribirse footer {
+      margin-top: 0; } }
+
+@media (min-width: 992px) {
+  .bodyNosotros {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bodyNosotros main {
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .bodyNosotros main .nosotrosContenido {
+        width: 60em;
+        height: 140em;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .bodyNosotros main .nosotrosContenido p {
+          font-size: 22px; }
+        .bodyNosotros main .nosotrosContenido .carousel .carousel-inner {
+          width: 40em; }
+        .bodyNosotros main .nosotrosContenido .nosotrosImagenContainer img {
+          width: 40em; }
+    .bodyNosotros footer {
+      margin-top: 0; } }
 
 @media (min-width: 992px) {
   .bodyLart {
@@ -807,6 +852,149 @@ main .faqContenido {
         margin-top: 0;
         background-color: white; }
     .bodyLart footer {
+      margin-top: 0; } }
+
+@media (min-width: 992px) {
+  .bodyFaq {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bodyFaq main {
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .bodyFaq main .faqContenido {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60em; }
+        .bodyFaq main .faqContenido h2 {
+          margin-top: 2em; }
+        .bodyFaq main .faqContenido .subTitulo {
+          font-size: 28px;
+          font-family: "Permanent Marker";
+          color: black;
+          font-weight: 100;
+          text-align: center; }
+        .bodyFaq main .faqContenido .siluetaFaq {
+          display: flex;
+          justify-content: center; }
+          .bodyFaq main .faqContenido .siluetaFaq img {
+            width: 5em; }
+        .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(3) {
+          display: flex;
+          justify-content: center; }
+          .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(3) img {
+            width: 4em; }
+        .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(4) {
+          display: flex;
+          justify-content: center; }
+          .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(4) img {
+            width: 3em; }
+        .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(5) {
+          display: flex;
+          justify-content: center; }
+          .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(5) img {
+            width: 6em; }
+        .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(6) img {
+          width: 7em; }
+        .bodyFaq main .faqContenido .siluetaFaq:nth-of-type(7) img {
+          width: 10em; }
+        .bodyFaq main .faqContenido .animacionContainer {
+          display: flex; }
+          .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; }
+            .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer img {
+              width: 5em; }
+          .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:first-of-type {
+            height: 20em; }
+          .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(2) img {
+            opacity: 0;
+            animation-name: animacionFaq;
+            animation-delay: 1s;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards; }
+          .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(3) {
+            padding-top: 2em; }
+            .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(3) img {
+              opacity: 0;
+              animation-name: animacionFaq;
+              animation-delay: 2s;
+              animation-duration: 1.5s;
+              animation-fill-mode: forwards; }
+          .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(4) {
+            padding-top: 8em; }
+            .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(4) img {
+              opacity: 0;
+              animation-name: animacionFaq;
+              animation-delay: 3s;
+              animation-duration: 1.5s;
+              animation-fill-mode: forwards; }
+          .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(5) {
+            display: flex;
+            align-items: flex-start; }
+        .bodyFaq main .faqContenido .parrafo a, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p a, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form a, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a {
+          font-family: "Permanent Marker";
+          color: black;
+          text-decoration: none; }
+        .bodyFaq main .faqContenido .parrafo a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p a:active, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form a:active, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a:active {
+          text-decoration: none;
+          color: green; }
+    .bodyFaq footer {
+      margin-top: 0; } }
+
+@media (min-width: 992px) {
+  .bodyContacto {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bodyContacto .contactoContenido {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60em;
+      height: 130em; }
+      .bodyContacto .contactoContenido .parrafo, .bodyContacto .contactoContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyContacto .contactoContenido p, .bodyContacto .contactoContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyContacto .contactoContenido form {
+        margin-top: 0em;
+        font-size: 30px; }
+      .bodyContacto .contactoContenido :nth-child(2) {
+        display: flex;
+        justify-content: flex-end; }
+        .bodyContacto .contactoContenido :nth-child(2) img {
+          width: 30em; }
+      .bodyContacto .contactoContenido .logoFlexContainer {
+        height: 50em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        .bodyContacto .contactoContenido .logoFlexContainer p {
+          display: flex;
+          justify-content: center;
+          font-size: 28px;
+          font-family: "Permanent Marker";
+          color: black;
+          font-weight: 100;
+          text-align: center; }
+        .bodyContacto .contactoContenido .logoFlexContainer a {
+          display: flex;
+          justify-content: center; }
+          .bodyContacto .contactoContenido .logoFlexContainer a .redSocialLogo {
+            width: 10em; }
+      .bodyContacto .contactoContenido :nth-child(4) img {
+        width: 30em; }
+      .bodyContacto .contactoContenido .pieDePagina .pieDePaginaSilueta {
+        display: flex;
+        justify-content: center; }
+        .bodyContacto .contactoContenido .pieDePagina .pieDePaginaSilueta img {
+          width: 5em; }
+    .bodyContacto footer {
       margin-top: 0; } }
 
 @media (min-width: 768px) {

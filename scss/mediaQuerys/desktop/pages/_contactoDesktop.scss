@@ -1,0 +1,64 @@
+@media  (min-width: 992px){
+    .bodyContacto{
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+            .contactoContenido{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60em;
+                height: 130em;
+                .parrafo{
+                    margin-top: 0em;
+                    font-size: 30px;
+                }
+                :nth-child(2){
+                    display: flex;
+                    justify-content: flex-end;
+                    img{
+                        width: 30em;
+                    }
+
+                }
+                .logoFlexContainer{
+                    height: 50em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        @include textoEstilo(28px,$markerTypo,black,100,center);
+                    }
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        .redSocialLogo{
+                            width: 10em;
+                        }
+                    }
+                }
+                :nth-child(4){
+                    img{
+                        width: 30em;
+                    }
+                }
+                .pieDePagina{
+                    .pieDePaginaSilueta{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 5em;
+                        }
+                    }
+                    
+                }
+            }
+            footer{
+                margin-top: 0;
+            }
+    }
+}

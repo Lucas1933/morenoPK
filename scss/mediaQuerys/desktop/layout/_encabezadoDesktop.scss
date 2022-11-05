@@ -1,7 +1,10 @@
 @media  (min-width: 992px){
 .banner{
+    background-color: white;
+    width: 60em;
     display: flex;
     flex-direction: column;
+
         :first-child{
             display: flex;
             justify-content: center;
@@ -34,7 +37,7 @@
         display: flex;
         justify-content: center;
         img{
-            width: 22em;
+            width: 40em;
             border: 10px solid #000000;
             border-radius: 35px 35px 35px 35px;
         }
