@@ -1,0 +1,13 @@
+Presupuesto
+Fecha de entrega: 7/11
+Fecha de comienzo:24/10
+Precio base: 25.000
+Incluye maquetado inicial en html+css de 1 index y 4 secciones.
+Dando un sitio web estatico, son animaciones de interaccion basica y 1 navbar general.
+
+Si se busca algo mas dinamico con animaciones mas trabajadas y llamativas esto nos aumenta a 10.000 mas, cubriendo 3 elementos por secciones animados, 
+cobrando 5000 por cada 3 elementos.
+Las imagenes si no son previstas por el cliente, pueden ser suministradas (dependiendo de las necesidades del cliente) con un costo extra.
+
+basados en este presupuesto, el sitio web salio 50k.
+En dolares jajaj.
