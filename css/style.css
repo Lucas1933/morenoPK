@@ -538,7 +538,10 @@ main .faqContenido {
       font-size: 15px !important; }
     header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
       font-size: 16px !important;
-      color: #06882d !important; } }
+      color: green !important; }
+    header .navbar .collapse .navbar-nav :nth-child(3) .nav-link:hover {
+      transform: scale(1.1);
+      font-size: 15px !important; } }
 
 @media (min-width: 992px) {
   footer .decoradoFooter {
