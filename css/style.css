@@ -170,7 +170,7 @@ footer {
     .pieDePagina .pieDePaginaSilueta img {
       width: 5em; }
 
-.parrafo, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form {
+.parrafo, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form {
   font-family: 'Alegreya', serif;
   text-align: center;
   font-size: 20px;
@@ -332,11 +332,11 @@ main .faqContenido {
         animation-fill-mode: forwards; }
     main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(5) {
       justify-content: flex-end; }
-  main .faqContenido .parrafo a, main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p a, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body main .faqContenido p a, main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form a, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body main .faqContenido form a {
+  main .faqContenido .parrafo a, main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p a, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body main .faqContenido p a, main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form a, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body main .faqContenido form a {
     font-family: "Permanent Marker";
     color: black;
     text-decoration: none; }
-  main .faqContenido .parrafo a:active, main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p a:active, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body main .faqContenido p a:active, main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form a:active, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body main .faqContenido form a:active {
+  main .faqContenido .parrafo a:active, main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p a:active, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body main .faqContenido p a:active, main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form a:active, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body main .faqContenido form a:active {
     text-decoration: none;
     color: green; }
 
@@ -373,9 +373,9 @@ main .faqContenido {
       border-radius: 35px 35px 35px 35px; }
 
 .inscribirse {
-  height: 170em; }
+  height: 190em; }
   .inscribirse .inscribirseContenido {
-    height: 170em;
+    height: 190em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,67 +395,72 @@ main .faqContenido {
       justify-content: center; }
       .inscribirse .inscribirseContenido div .inscribirseSilueta img {
         width: 7em; }
-    .inscribirse .inscribirseContenido .siluetaInscribirse {
+    .inscribirse .inscribirseContenido .botonesySiluetasContainer {
+      height: 100em;
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .inscribirse .inscribirseContenido .siluetaInscribirse img {
-        width: 15em; }
-    .inscribirse .inscribirseContenido :nth-child(5) img {
-      width: 10em; }
-    .inscribirse .inscribirseContenido .botonAformularioContainer {
-      display: flex;
-      justify-content: center;
-      align-content: center; }
-      .inscribirse .inscribirseContenido .botonAformularioContainer p {
-        padding-top: 0;
-        text-align: center; }
-      .inscribirse .inscribirseContenido .botonAformularioContainer .boton {
-        padding-top: 3em;
-        padding-bottom: 3em;
-        width: 12em;
-        background-size: cover;
-        border: solid #000000;
-        border-radius: 6em;
-        border-width: 10px;
-        box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
-        font-size: 28px;
-        font-family: "Permanent Marker";
-        color: white;
-        font-weight: 100;
-        text-align: center; }
-      .inscribirse .inscribirseContenido .botonAformularioContainer .boton:active {
-        border-color: green; }
-        .inscribirse .inscribirseContenido .botonAformularioContainer .boton:active .ubicacionNombre {
-          color: green; }
-      .inscribirse .inscribirseContenido .botonAformularioContainer #botonHospital {
-        background-image: url("../../../assets/images/inscribirse/botones/hospital.jpeg"); }
-      .inscribirse .inscribirseContenido .botonAformularioContainer #botonSanMartin {
-        background-image: url("../../../assets/images/inscribirse/botones/sanMartinDark.jpg"); }
-      .inscribirse .inscribirseContenido .botonAformularioContainer #botonBujan {
-        background-image: url("../../../assets/images/inscribirse/botones/bujandark.jpg"); }
-      .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content {
-        width: 20em;
-        height: 48em;
-        margin-left: 0.4em;
-        border: 5px solid #000000;
-        border-radius: 31px 31px 31px 31px; }
-        .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content button {
-          border: none; }
-        .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body {
-          padding-top: 0; }
-          .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p {
-            padding-top: 0;
-            font-size: 25px; }
-          .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .ubicacionGoogleMapa {
-            border: 5px solid #6e6e6e; }
-          .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form {
-            text-align: left; }
-          .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body select {
-            margin-top: 1em;
-            margin-bottom: 1em; }
-          .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body button {
-            margin-top: 1em; }
+      justify-content: space-evenly; }
+      .inscribirse .inscribirseContenido .botonesySiluetasContainer .siluetaInscribirse {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .siluetaInscribirse img {
+          width: 15em; }
+      .inscribirse .inscribirseContenido .botonesySiluetasContainer :nth-child(4) img {
+        width: 10em; }
+      .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center; }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer p {
+          padding-top: 0;
+          text-align: center; }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .boton {
+          padding-top: 3em;
+          padding-bottom: 3em;
+          width: 12em;
+          background-size: cover;
+          border: solid #000000;
+          border-radius: 6em;
+          border-width: 10px;
+          box-shadow: inset 0px 1px 0px #000000, 0px 10px 0px #000000;
+          font-size: 28px;
+          font-family: "Permanent Marker";
+          color: white;
+          font-weight: 100;
+          text-align: center; }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .boton:active {
+          border-color: green; }
+          .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .boton:active .ubicacionNombre {
+            color: green; }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer #botonHospital {
+          background-image: url("../../../assets/images/inscribirse/botones/hospital.jpeg"); }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer #botonSanMartin {
+          background-image: url("../../../assets/images/inscribirse/botones/sanMartinDark.jpg"); }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer #botonBujan {
+          background-image: url("../../../assets/images/inscribirse/botones/bujandark.jpg"); }
+        .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content {
+          width: 20em;
+          height: 48em;
+          margin-left: 0.4em;
+          border: 5px solid #000000;
+          border-radius: 31px 31px 31px 31px; }
+          .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content button {
+            border: none; }
+          .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body {
+            padding-top: 0; }
+            .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p {
+              padding-top: 0;
+              font-size: 25px; }
+            .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .ubicacionGoogleMapa {
+              border: 5px solid #6e6e6e; }
+            .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form {
+              text-align: left; }
+            .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body select {
+              margin-top: 1em;
+              margin-bottom: 1em; }
+            .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body button {
+              margin-top: 1em; }
   .inscribirse [data-aos] {
     pointer-events: none; }
   .inscribirse .aos-animate {
@@ -470,7 +475,7 @@ main .faqContenido {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
-  .contactoContenido .parrafo, .contactoContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .contactoContenido p, .contactoContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .contactoContenido form {
+  .contactoContenido .parrafo, .contactoContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .contactoContenido p, .contactoContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .contactoContenido form {
     margin-top: 0em; }
   .contactoContenido .logoFlexContainer {
     height: 50em;
@@ -879,7 +884,7 @@ main .faqContenido {
           width: 25em; }
         .bodyLart main .lartContenido img:nth-of-type(6) {
           width: 20em; }
-        .bodyLart main .lartContenido .parrafo:nth-of-type(6) img, .bodyLart main .lartContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p:nth-of-type(6) img, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyLart main .lartContenido p:nth-of-type(6) img, .bodyLart main .lartContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form:nth-of-type(6) img, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyLart main .lartContenido form:nth-of-type(6) img {
+        .bodyLart main .lartContenido .parrafo:nth-of-type(6) img, .bodyLart main .lartContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p:nth-of-type(6) img, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyLart main .lartContenido p:nth-of-type(6) img, .bodyLart main .lartContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form:nth-of-type(6) img, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyLart main .lartContenido form:nth-of-type(6) img {
           width: 25em; }
         .bodyLart main .lartContenido h2 {
           margin-top: 2em; }
@@ -990,11 +995,11 @@ main .faqContenido {
           .bodyFaq main .faqContenido .animacionContainer .secuenciaContainer:nth-of-type(5) {
             display: flex;
             align-items: flex-start; }
-        .bodyFaq main .faqContenido .parrafo a, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p a, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form a, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a {
+        .bodyFaq main .faqContenido .parrafo a, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p a, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form a, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a {
           font-family: "Permanent Marker";
           color: black;
           text-decoration: none; }
-        .bodyFaq main .faqContenido .parrafo a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p a:active, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form a:active, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a:active {
+        .bodyFaq main .faqContenido .parrafo a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p a:active, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form a:active, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a:active {
           text-decoration: none;
           color: green; }
     .bodyFaq footer {
@@ -1013,7 +1018,7 @@ main .faqContenido {
       align-items: center;
       width: 60em;
       height: 130em; }
-      .bodyContacto .contactoContenido .parrafo, .bodyContacto .contactoContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyContacto .contactoContenido p, .bodyContacto .contactoContenido .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body form, .inscribirse .inscribirseContenido .botonAformularioContainer .modal-content .modal-body .bodyContacto .contactoContenido form {
+      .bodyContacto .contactoContenido .parrafo, .bodyContacto .contactoContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyContacto .contactoContenido p, .bodyContacto .contactoContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyContacto .contactoContenido form {
         margin-top: 0em;
         font-size: 30px; }
       .bodyContacto .contactoContenido :nth-child(2) {
