@@ -18,6 +18,12 @@
                 div{
                     margin-bottom: 0;
                 }
+                .botonAformularioContainer{
+                    .btn:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
             .ubicacionesContainer{
                 display: flex;
                 flex-direction: row;

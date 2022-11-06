@@ -806,6 +806,8 @@ main .faqContenido {
         align-items: center; }
         .bodyInscribirse main .inscribirseContenido div {
           margin-bottom: 0; }
+        .bodyInscribirse main .inscribirseContenido .botonAformularioContainer .btn:hover {
+          transform: scale(1.1); }
         .bodyInscribirse main .inscribirseContenido .ubicacionesContainer {
           display: flex;
           flex-direction: row; }
