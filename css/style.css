@@ -767,6 +767,27 @@ main .faqContenido {
         z-index: 2; } }
 
 @media (min-width: 992px) {
+  .bodyGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bodyGaleria main {
+      height: 90em; }
+      .bodyGaleria main .galeriaContenido {
+        height: 90em;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .bodyGaleria main .galeriaContenido .galeriaContainer {
+          height: 60em;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          row-gap: 1em; }
+          .bodyGaleria main .galeriaContenido .galeriaContainer div img {
+            height: 13em; } }
+
+@media (min-width: 992px) {
   .bodyInscribirse {
     background-color: #000000;
     display: flex;

@@ -1,7 +1,31 @@
 @media  (min-width: 992px){
-    main{
-        .galeriaContainer{
-            
+    .bodyGaleria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        main{
+            height: 90em;
+            .galeriaContenido{
+                height: 90em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .galeriaContainer{
+                   height: 60em;
+                   
+                   display: grid;
+                   grid-template-columns: repeat(3,1fr);
+                   grid-template-rows: repeat(3,1fr);
+                   row-gap: 1em;
+                   div{
+                    img{
+                        height: 13em;
+                    }
+                   }
+                }
+            }
+
         }
     }
+
 }
