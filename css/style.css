@@ -797,29 +797,76 @@ main .faqContenido {
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    height: 150em; }
     .bodyInscribirse main {
       background-color: #000000;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      height: 190em; }
       .bodyInscribirse main .inscribirseContenido {
         width: 60em;
+        height: 180em;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center; }
         .bodyInscribirse main .inscribirseContenido div {
           margin-bottom: 0; }
-        .bodyInscribirse main .inscribirseContenido .botonAformularioContainer .btn:hover {
-          transform: scale(1.1); }
-        .bodyInscribirse main .inscribirseContenido .ubicacionesContainer {
-          display: flex;
-          flex-direction: row; }
-          .bodyInscribirse main .inscribirseContenido .ubicacionesContainer .dropdown-show .btn {
-            height: 20em; }
-          .bodyInscribirse main .inscribirseContenido .ubicacionesContainer .dropdown-show .dropdown-menu {
-            width: 30em; }
+        .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer {
+          height: 120em;
+          /*                     .botonAformularioContainer:nth-child(1){
+                        grid-area: hospital;
+                        
+                    }
+                    .siluetaInscribirse:nth-child(2){
+                        grid-area: vault;
+                       
+                        
+                    }
+                    .botonAformularioContainer:nth-child(3){
+                        grid-area: martin;
+                        
+                    }
+                    .siluetaInscribirse:nth-child(4){
+                        grid-area: cat;
+                        
+                    }
+                    .botonAformularioContainer:nth-child(5){
+                        grid-area: bujan;
+                       
+                    } */ }
+          .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .btn:hover {
+            transform: scale(1.1); }
+          .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal {
+            margin-left: 18em; }
+            .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog {
+              margin: 0;
+              width: 70em;
+              height: 30em; }
+              .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content {
+                width: 50em;
+                height: 50em; }
+                .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body {
+                  width: 50em;
+                  height: 40em;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-evenly; }
+                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body iframe {
+                    width: 20em;
+                    height: 10em; }
+                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body form {
+                    width: 30em;
+                    height: 30em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly; }
+                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body .form-check #1012 {
+                    width: 30em; }
       .bodyInscribirse main .pieDePagina {
         background-color: white; }
     .bodyInscribirse footer {
