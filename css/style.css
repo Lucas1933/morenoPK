@@ -42,9 +42,16 @@ header {
           animation-name: animacionLogoHeaderMobile;
           animation-duration: 1.5s; }
     header .navbar .collapse .navbar-nav .nav-item .nav-link {
-      line-height: 2.5em;
-      font-size: 20px;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px;
+      border-style: solid;
+      font-size: 16px;
       color: white !important; }
+    header .navbar .collapse .navbar-nav .nav-item .nav-link:active {
+      color: green !important;
+      border-color: white; }
     header .navbar .navbar-toggler {
       display: flex;
       padding-right: 0.2em;
