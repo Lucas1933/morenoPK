@@ -484,6 +484,30 @@ main .faqContenido {
       .contactoContenido .logoFlexContainer a .redSocialLogo {
         width: 10em; }
 
+.bodyGaleria {
+  overflow-x: hidden; }
+  .bodyGaleria main {
+    height: 150em; }
+    .bodyGaleria main .galeriaContenido {
+      height: 150em; }
+      .bodyGaleria main .galeriaContenido .galeriaContainer {
+        height: 130em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        .bodyGaleria main .galeriaContenido .galeriaContainer div {
+          display: flex;
+          justify-content: center; }
+          .bodyGaleria main .galeriaContenido .galeriaContainer div img {
+            width: 20em;
+            border: 5px solid #000000; }
+  .bodyGaleria #exampleModal .modal-dialog {
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    margin: 0 auto; }
+
 @media (min-width: 992px) {
   header .navbar {
     display: flex;
@@ -731,11 +755,6 @@ main .faqContenido {
       .bodyInicio main .inicioContenido .botones .botonContainer:active .btnText a {
         position: relative;
         z-index: 2; } }
-
-@media (min-width: 992px) {
-  main .galeriaContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 992px) {
   .bodyInscribirse {
