@@ -28,20 +28,23 @@
                         .nav-link{
                             display: flex;
                             justify-content: center;
-                            font-weight: 1000 !important;
+                            font-weight: 700 !important;
+                            letter-spacing: 1px;
                             font-size: 15px !important;
                         }
                         .nav-link:hover{
-                            font-size: 16px !important;
+                            transform: scale(1.1);
                             color: green !important;
                         }
 
                     }
                     :nth-child(3){
+                        .nav-link{
+                            padding-top: 9px;
+                            font-size: 14px !important;
+                        }
                         .nav-link:hover{
                             transform: scale(1.1);
-                            font-size: 15px !important;
-                            
                         }
                         
                     }
