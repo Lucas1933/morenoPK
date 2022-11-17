@@ -11,15 +11,22 @@
             }
         }
         .footerContainer{
-            padding-top: 10em;
+            
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: 1fr;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(3,1fr);
             .seguinosContainer{
+                height: 10em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 p{
                     font-size: 20px;
                 }
                 .footerLogoContainer{
+                    padding-top: 2em;
+                    width: 20em;
+                    display: flex;
                     a{  
                         width: 4em;
                         img{
@@ -32,17 +39,17 @@
             .listaContainer{
                 padding-top: 0;
                 ul{
-                    height: 25em;
-                    padding-bottom: 10em;
+                    height: 10em;
+                    margin-bottom: 0;
                     list-style: none;
                     display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
+                    justify-content: space-between;
+                    align-items: center;
                         li{
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            width: 30em;
+                            width: 10em;
                             a{
                                 display: flex;
                                 flex-direction: column;
@@ -72,11 +79,9 @@
                 }
                 .logoFooterContainer{
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: center;
                     div{
-                    padding-right: 3em;
-                    display: flex;
-                    align-items: flex-end;
+                    width: 10em;
                     }
                     img{
                         width: 8em !important;

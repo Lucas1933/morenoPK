@@ -562,31 +562,39 @@ main .faqContenido {
     footer .decoradoFooter img {
       display: none; }
   footer .footerContainer {
-    padding-top: 10em;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; }
-    footer .footerContainer .seguinosContainer p {
-      font-size: 20px; }
-    footer .footerContainer .seguinosContainer .footerLogoContainer a {
-      width: 4em; }
-      footer .footerContainer .seguinosContainer .footerLogoContainer a img {
-        width: 2em !important;
-        height: 2em; }
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    footer .footerContainer .seguinosContainer {
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .footerContainer .seguinosContainer p {
+        font-size: 20px; }
+      footer .footerContainer .seguinosContainer .footerLogoContainer {
+        padding-top: 2em;
+        width: 20em;
+        display: flex; }
+        footer .footerContainer .seguinosContainer .footerLogoContainer a {
+          width: 4em; }
+          footer .footerContainer .seguinosContainer .footerLogoContainer a img {
+            width: 2em !important;
+            height: 2em; }
     footer .footerContainer .listaContainer {
       padding-top: 0; }
       footer .footerContainer .listaContainer ul {
-        height: 25em;
-        padding-bottom: 10em;
+        height: 10em;
+        margin-bottom: 0;
         list-style: none;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around; }
+        justify-content: space-between;
+        align-items: center; }
         footer .footerContainer .listaContainer ul li {
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 30em; }
+          width: 10em; }
           footer .footerContainer .listaContainer ul li a {
             display: flex;
             flex-direction: column;
@@ -606,11 +614,9 @@ main .faqContenido {
         font-size: 15px; }
       footer .footerContainer .renunciaContainer .logoFooterContainer {
         display: flex;
-        justify-content: space-evenly; }
+        justify-content: center; }
         footer .footerContainer .renunciaContainer .logoFooterContainer div {
-          padding-right: 3em;
-          display: flex;
-          align-items: flex-end; }
+          width: 10em; }
         footer .footerContainer .renunciaContainer .logoFooterContainer img {
           width: 8em !important; } }
 
