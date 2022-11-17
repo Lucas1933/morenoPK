@@ -1064,6 +1064,8 @@ main .faqContenido {
         .bodyFaq main .faqContenido .parrafo a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p a:active, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a:active, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form a:active, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a:active {
           text-decoration: none;
           color: green; }
+        .bodyFaq main .faqContenido .parrafo a:hover, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p a:hover, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido p a:hover, .bodyFaq main .faqContenido .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body form a:hover, .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body .bodyFaq main .faqContenido form a:hover {
+          text-decoration: underline; }
     .bodyFaq footer {
       margin-top: 0; } }
 
