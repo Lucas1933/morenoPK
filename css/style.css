@@ -609,8 +609,10 @@ main .faqContenido {
           width: 15em; }
     footer .footerContainer .renunciaContainer {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
       footer .footerContainer .renunciaContainer p {
+        width: 70em;
         font-size: 15px; }
       footer .footerContainer .renunciaContainer .logoFooterContainer {
         display: flex;
@@ -673,6 +675,9 @@ main .faqContenido {
       display: none; }
     .bodyInicio main .inicioContenido .parrafoInicio {
       padding-top: 18em;
+      padding-left: 5em;
+      padding-right: 5em;
+      justify-self: center;
       background: white;
       background: linear-gradient(0deg, white 0%, white 34%, rgba(255, 255, 255, 0) 59%);
       font-size: 28px;

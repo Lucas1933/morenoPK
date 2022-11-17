@@ -14,7 +14,10 @@
                     display: none;
                 }
                 .parrafoInicio{
-                    padding-top: 18em; 
+                    padding-top: 18em;
+                    padding-left: 5em;
+                    padding-right: 5em;
+                    justify-self: center;
                     background: rgb(255,255,255);
                     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 59%);
                     @include textoEstilo(28px,$markerTypo,black,0,center);
