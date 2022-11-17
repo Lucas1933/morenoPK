@@ -14,6 +14,10 @@
                     a{
                         @include textoEstilo(28px,$markerTypo,black,100,center);
                     }
+                    a:active{
+                        color: green;
+                        text-decoration: none;
+                    }
                 }
                 .inscribirseSilueta{
                     display: flex;

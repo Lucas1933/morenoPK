@@ -390,6 +390,9 @@ main .faqContenido {
         color: black;
         font-weight: 100;
         text-align: center; }
+      .inscribirse .inscribirseContenido div p a:active {
+        color: green;
+        text-decoration: none; }
     .inscribirse .inscribirseContenido div .inscribirseSilueta {
       display: flex;
       justify-content: center; }
