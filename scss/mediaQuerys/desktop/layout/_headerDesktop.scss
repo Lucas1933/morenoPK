@@ -31,9 +31,12 @@
                             font-weight: 700 !important;
                             letter-spacing: 1px;
                             font-size: 15px !important;
+                            transform: scale(1);
+                            transition-duration: 0.5s;
                         }
                         .nav-link:hover{
                             transform: scale(1.1);
+                            transition-duration: 0.3s;
                             color: green !important;
                         }
 

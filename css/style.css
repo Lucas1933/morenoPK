@@ -541,15 +541,16 @@ main .faqContenido {
       justify-content: center;
       font-weight: 700 !important;
       letter-spacing: 1px;
-      font-size: 15px !important; }
+      font-size: 15px !important;
+      transform: scale(1);
+      transition-duration: 0.5s; }
     header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
       transform: scale(1.1);
+      transition-duration: 0.3s;
       color: green !important; }
     header .navbar .collapse .navbar-nav :nth-child(3) .nav-link {
       padding-top: 9px;
-      font-size: 14px !important; }
-    header .navbar .collapse .navbar-nav :nth-child(3) .nav-link:hover {
-      transform: scale(1.1); } }
+      font-size: 14px !important; } }
 
 @media (min-width: 992px) {
   footer .decoradoFooter {
