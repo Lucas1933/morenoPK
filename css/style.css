@@ -434,11 +434,11 @@ main .faqContenido {
           .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .boton:active .ubicacionNombre {
             color: green; }
         .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer #botonHospital {
-          background-image: url("../../../assets/images/inscribirse/botones/hospital.jpeg"); }
+          background-image: url("../assets/images/inscribirse/botones/hospital.jpeg"); }
         .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer #botonSanMartin {
-          background-image: url("../../../assets/images/inscribirse/botones/sanMartinDark.jpg"); }
+          background-image: url("../assets/images/inscribirse/botones/sanMartinDark.jpg"); }
         .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer #botonBujan {
-          background-image: url("../../../assets/images/inscribirse/botones/bujandark.jpg"); }
+          background-image: url("../assets/images/inscribirse/botones/bujandark.jpg"); }
         .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content {
           width: 20em;
           height: 48em;
@@ -556,7 +556,7 @@ main .faqContenido {
   footer .decoradoFooter {
     height: 17em;
     background-color: white;
-    background-image: url("../../../../assets/images/decoracionFooter.jpg");
+    background-image: url("../assets/images/decoracionFooter.jpg");
     background-size: cover;
     background-size: 40em 20em; }
     footer .decoradoFooter img {
@@ -664,11 +664,11 @@ main .faqContenido {
     display: grid;
     grid-template-columns: 1fr;
     overflow-y: hidden;
-    background-image: url("../../../../assets/images/inicioDesktop/inscribirse.jpeg");
+    background-image: url("../assets/images/inicioDesktop/inscribirse.jpeg");
     background-repeat: no-repeat;
     background-size: 85em;
     background-position-y: -16em;
-    background-image: url("../../../../assets/images/inicioDesktop/inicioDesktopBG.jpg"); }
+    background-image: url("../assets/images/inicioDesktop/inicioDesktopBG.jpg"); }
     .bodyInicio main .inicioContenido #carouselInicio {
       display: none; }
     .bodyInicio main .inicioContenido .parrafoInicio {
