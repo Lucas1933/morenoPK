@@ -817,8 +817,6 @@ main .faqContenido {
     flex-direction: column;
     align-items: center;
     height: 150em; }
-    .bodyInscribirse header {
-      position: sticky; }
     .bodyInscribirse main {
       background-color: #000000;
       display: flex;
@@ -865,34 +863,73 @@ main .faqContenido {
             width: fit-content; }
             .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .btn:hover {
               transform: scale(1.1); }
-            .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal {
-              margin-left: 18em; }
-              .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog {
-                margin: 0;
-                width: 70em;
-                height: 30em; }
-                .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content {
+          .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal {
+            width: 50em;
+            height: 40em;
+            margin-left: 16.5em;
+            margin-top: 1em; }
+            .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog {
+              width: 50em;
+              height: 40em;
+              margin: 0; }
+              .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content {
+                width: 50em;
+                height: 40em; }
+                .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .botonCierreFormularioContainer {
+                  display: flex;
+                  justify-content: flex-end; }
+                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .botonCierreFormularioContainer button {
+                    width: 3em;
+                    height: 3em;
+                    margin-top: 5px;
+                    margin-right: 5px;
+                    border-color: #000000;
+                    border-style: solid;
+                    border-radius: 200px 200px 200px 200px;
+                    display: flex;
+                    justify-content: center; }
+                .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body {
                   width: 50em;
-                  height: 50em; }
-                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body {
-                    width: 50em;
-                    height: 40em;
+                  height: 35em;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center; }
+                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body iframe {
+                    margin-bottom: 1em; }
+                  .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
-                    justify-content: space-evenly; }
-                    .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body iframe {
-                      width: 20em;
-                      height: 10em; }
-                    .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body form {
-                      width: 30em;
-                      height: 30em;
+                    align-items: center; }
+                    .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .formGroupContainer {
                       display: flex;
-                      flex-direction: column;
-                      align-items: center;
+                      justify-content: center;
                       justify-content: space-evenly; }
-                    .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal .modal-dialog .modal-content .modal-body .form-check #1012 {
-                      width: 30em; }
+                      .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .formGroupContainer .form-group {
+                        margin: 0;
+                        width: fit-content; }
+                        .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .formGroupContainer .form-group label {
+                          margin: 0;
+                          width: fit-content; }
+                        .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .formGroupContainer .form-group input {
+                          margin: 0; }
+                    .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .edadHorarioContainer {
+                      display: flex;
+                      justify-content: center; }
+                      .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .edadHorarioContainer .edadCheckContainer {
+                        width: 15.3em;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center; }
+                        .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .edadHorarioContainer .edadCheckContainer :first-child {
+                          width: 15em; }
+                        .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .edadHorarioContainer .edadCheckContainer .form-check {
+                          padding-left: 0;
+                          width: 15em; }
+                      .bodyInscribirse main .inscribirseContenido .botonesySiluetasContainer .modal .modal-dialog .modal-content .modal-body form .edadHorarioContainer .customSelectContainer {
+                        height: 10em;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center; }
       .bodyInscribirse main .pieDePagina {
         background-color: white; }
     .bodyInscribirse footer {

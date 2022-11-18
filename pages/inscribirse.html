@@ -97,9 +97,11 @@
               <div class="modal fade" id="formularioModalHospital" tabindex="-1" role="dialog"   aria-labelledby="formularioModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
+                    <div class="botonCierreFormularioContainer">
                       <button type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="d-flex justify-content-end">&times;</span>
+                        <span aria-hidden="true" class="d-flex justify-content-center">&times;</span>
                       </button>
+                    </div>
                     <div class="modal-body">
                       <p>Av. del libertador 710</p>
                       <iframe class="ubicacionGoogleMapa"
@@ -107,44 +109,52 @@
                       style="border:1;" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                       <form>
-                          <div class="form-group">
-                            <label for="nombreApellido">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="inputNombreApellido" >
+                        <div class="formGroupContainer">
+                            <div class="form-group">
+                              <label for="nombreApellido">Nombre y apellido</label>
+                              <input type="text" class="form-control" id="inputNombreApellido" >
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                            </div>
                           </div>
-                          <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                          <div class="edadHorarioContainer">
+                            <div class="edadCheckContainer">
+                              <label for="">Edad</label>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
+                                <label class="form-check-label" for="edad1012">
+                                  10-12
+                                </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                                  <label class="form-check-label" for="edad1315">
+                                    13-15
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                                  <label class="form-check-label" for="edad1618">
+                                    16-18
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                                  <label class="form-check-label" for="edad18">
+                                    18+
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="customSelectContainer">
+                                <select class="custom-select">
+                                  <option selected>Seleccionar horario</option>
+                                  <option value="1">14hs a 16hs</option>
+                                  <option value="2">18hs a 20hs</option>
+                                </select>
+                            </div>
                           </div>
-                          <label for="">Edad</label>
-                          <div class="form-check">
-                              <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
-                              <label class="form-check-label" for="edad1012">
-                                10-12
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
-                              <label class="form-check-label" for="edad1315">
-                                13-15
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
-                              <label class="form-check-label" for="edad1618">
-                                16-18
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
-                              <label class="form-check-label" for="edad18">
-                                18+
-                              </label>
-                            </div>
-                            <select class="custom-select">
-                              <option selected>Seleccionar horario</option>
-                              <option value="1">14hs a 16hs</option>
-                              <option value="2">18hs a 20hs</option>
-                            </select>
                           <button type="submit" class="btn btn-dark">Enviar</button>
                         </form>
                     </div>
@@ -152,6 +162,7 @@
                 </div>
               </div>
             </div>
+
   <!-- HOSPITAL------------------------------------------ -->
               <div class="siluetaInscribirse"><img src="../assets/images/inscribirse/siluetas/siluetita_3.png" alt=""></div>
   <!-- SAN MARTIN------------------------------------------ -->
@@ -162,13 +173,16 @@
                 <div class="modal fade" id="formularioModalSanMartin" tabindex="-1" role="dialog"   aria-labelledby="formularioModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
+                      <div class="botonCierreFormularioContainer">
                         <button type="button" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="d-flex justify-content-end">&times;</span>
+                          <span aria-hidden="true" class="d-flex justify-content-center">&times;</span>
                         </button>
+                      </div>
                       <div class="modal-body">
                         <p>Av.Bartolomé Mitre 2898</p> 
                         <iframe class="ubicacionGoogleMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6564.332071017577!2d-58.792957775466576!3d-34.65050955198455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdd7961812afacd6!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1667477611124!5m2!1ses!2sar" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <form>
+                          <div class="formGroupContainer">
                             <div class="form-group">
                               <label for="nombreApellido">Nombre y apellido</label>
                               <input type="text" class="form-control" id="inputNombreApellido" >
@@ -177,36 +191,43 @@
                               <label for="email">Email</label>
                               <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                             </div>
-                            <div class="form-check">
-                                <label for="">Edad</label>
+                          </div>
+                          <div class="edadHorarioContainer">
+                            <div class="edadCheckContainer">
+                              <label for="">Edad</label>
+                                <div class="form-check">
                                 <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
                                 <label class="form-check-label" for="edad1012">
                                   10-12
                                 </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
-                                <label class="form-check-label" for="edad1315">
-                                  13-15
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
-                                <label class="form-check-label" for="edad1618">
-                                  16-18
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
-                                <label class="form-check-label" for="edad18">
-                                  18+
-                                </label>
-                              </div>
-                              <select class="custom-select">
-                                <option selected>Seleccionar horario</option>
-                                <option value="1">14hs a 16hs</option>
-                                <option value="2">18hs a 20hs</option>
-                              </select>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                                  <label class="form-check-label" for="edad1315">
+                                    13-15
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                                  <label class="form-check-label" for="edad1618">
+                                    16-18
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                                  <label class="form-check-label" for="edad18">
+                                    18+
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="customSelectContainer">
+                                <select class="custom-select">
+                                  <option selected>Seleccionar horario</option>
+                                  <option value="1">14hs a 16hs</option>
+                                  <option value="2">18hs a 20hs</option>
+                                </select>
+                            </div>
+                          </div>
                             <button type="submit" class="btn btn-dark">Enviar</button>
                           </form>
                       </div>
@@ -224,9 +245,11 @@
                 <div class="modal fade" id="formularioModalBujan" tabindex="-1" role="dialog"   aria-labelledby="formularioModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
+                      <div class="botonCierreFormularioContainer">
                         <button type="button" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="d-flex justify-content-end">&times;</span>
+                          <span aria-hidden="true" class="d-flex justify-content-center">&times;</span>
                         </button>
+                      </div>
                       <div class="modal-body">
                         <p>Justo Daract 1541</p> 
                         <iframe class="ubicacionGoogleMapa"
@@ -234,6 +257,7 @@
                         style="border:1;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <form>
+                          <div class="formGroupContainer">
                             <div class="form-group">
                               <label for="nombreApellido">Nombre y apellido</label>
                               <input type="text" class="form-control" id="inputNombreApellido" >
@@ -242,36 +266,43 @@
                               <label for="email">Email</label>
                               <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                             </div>
-                            <div class="form-check">
-                                <label for="">Edad</label>
+                          </div>
+                          <div class="edadHorarioContainer">
+                            <div class="edadCheckContainer">
+                              <label for="">Edad</label>
+                                <div class="form-check">
                                 <input class="form-check-input" type="radio" name="edad" id="edad1012" value="option1" >
                                 <label class="form-check-label" for="edad1012">
                                   10-12
                                 </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
-                                <label class="form-check-label" for="edad1315">
-                                  13-15
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
-                                <label class="form-check-label" for="edad1618">
-                                  16-18
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
-                                <label class="form-check-label" for="edad18">
-                                  18+
-                                </label>
-                              </div>
-                              <select class="custom-select">
-                                <option selected>Seleccionar horario</option>
-                                <option value="1">14hs a 16hs</option>
-                                <option value="2">18hs a 20hs</option>
-                              </select>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad1315" value="option2">
+                                  <label class="form-check-label" for="edad1315">
+                                    13-15
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad1618" value="option3">
+                                  <label class="form-check-label" for="edad1618">
+                                    16-18
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="edad" id="edad18" value="option4">
+                                  <label class="form-check-label" for="edad18">
+                                    18+
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="customSelectContainer">
+                                <select class="custom-select">
+                                  <option selected>Seleccionar horario</option>
+                                  <option value="1">14hs a 16hs</option>
+                                  <option value="2">18hs a 20hs</option>
+                                </select>
+                            </div>
+                          </div>
                             <button type="submit" class="btn btn-dark">Enviar</button>
                           </form>
                       </div>

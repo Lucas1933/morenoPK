@@ -5,9 +5,6 @@
         flex-direction: column;
         align-items: center;
         height: 150em;
-        header{
-            position: sticky;
-        }
         main{
             background-color: #000000;
             display: flex;
@@ -68,39 +65,88 @@
                         .btn:hover{
                             transform: scale(1.1);
                         }
-                        .modal{
-                            margin-left: 18em;
-                           
-                            .modal-dialog{
-                                margin: 0;
-                                width: 70em;
-                                height: 30em;
-                                .modal-content{
+                        
+                    }
+                    .modal{
+                        width: 50em;
+                        height: 40em;
+                        margin-left: 16.5em;
+                        margin-top: 1em;
+                        .modal-dialog{
+                            width: 50em;
+                            height: 40em;
+                            margin: 0;
+                            .modal-content{
+                                width: 50em;
+                                height: 40em;
+                                .botonCierreFormularioContainer{
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    button{
+                                        width: 3em;
+                                        height: 3em;
+                                        margin-top: 5px;
+                                        margin-right: 5px;
+                                        border-color: #000000;
+                                        border-style: solid;
+                                        border-radius: 200px 200px 200px 200px;
+                                        display: flex;
+                                        justify-content: center;
+                                        span{
+
+                                        }
+                                    }
+                                }
+                                .modal-body{
                                     width: 50em;
-                                    height: 50em;
-                                    .modal-body{
-                                        width: 50em;
-                                        height: 40em;
+                                    height: 35em;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    iframe{
+                                        margin-bottom: 1em;
+                                    }
+                                    form{
                                         display: flex;
                                         flex-direction: column;
                                         align-items: center;
-                                        justify-content: space-evenly;
-                                        iframe{
-                                            width: 20em;
-                                            height: 10em;
-                                        }
-                                        form{
-                                            width: 30em;
-                                            height: 30em;
+                                        .formGroupContainer{
                                             display: flex;
-                                            flex-direction: column;
-                                            align-items: center;
+                                            justify-content: center;
                                             justify-content: space-evenly;
+                                            .form-group{
+                                                margin: 0;
+                                                width: fit-content;
+                                                label{
+                                                    margin: 0;
+                                                    width: fit-content;
+                                                }
+                                                input{
+                                                    margin: 0;
+                                                }
+                                            }
                                         }
-                                        .form-check{
-                                            
-                                            #1012{
-                                                width: 30em;
+                                        .edadHorarioContainer{
+                                            display: flex;
+                                            justify-content: center;
+                                            .edadCheckContainer{
+                                                width: 15.3em;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                :first-child{
+                                                    width: 15em;
+                                                }
+                                                .form-check{
+                                                    padding-left: 0;
+                                                    width: 15em;
+                                                }
+                                            }
+                                            .customSelectContainer{
+                                                height: 10em;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
                                             }
                                         }
 
