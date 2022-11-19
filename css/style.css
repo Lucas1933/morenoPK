@@ -462,8 +462,6 @@ main .faqContenido {
               display: flex;
               flex-direction: column;
               justify-content: center; }
-            .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .botonCierreFormularioContainer button:active {
-              border-color: green; }
           .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body {
             padding-top: 0; }
             .inscribirse .inscribirseContenido .botonesySiluetasContainer .botonAformularioContainer .modal-content .modal-body p {
